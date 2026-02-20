@@ -8,13 +8,14 @@ Before deploying, you'll need:
 2. **Render Account** - Free account at [render.com](https://render.com)
 3. **Gemini API Key** - From [Google AI Studio](https://makersuite.google.com/app/apikey)
 
-## Step 1: Get Gemini API Key
+## Step 1: Get Vertex AI API Key
 
 1. Go to [Google AI Studio](https://makersuite.google.com/app/apikey)
 2. Sign in with your Google account
 3. Click "Create API Key"
-4. Copy your API key (starts with `AIza...`)
-5. **Important**: Keep this key secure - don't share it or commit to git
+4. Make sure **Vertex AI** is enabled for your account
+5. Copy your API key (starts with `AIza...`)
+6. **Important**: Keep this key secure - don't share it or commit to git
 
 ## Step 2: Push to GitHub
 
@@ -66,9 +67,11 @@ In the **Environment** section, add this variable:
 
 | Key | Value |
 |-----|-------|
-| `GOOGLE_API_KEY` | Your Gemini API key (from Step 1) |
+| `GOOGLE_API_KEY` | Your Vertex AI API key (from Step 1) |
 
 **Example**: `AIzaSyDLYn6mPglg7-3_w4SAdnGIxW4pdr2dNpk`
+
+**Note**: Make sure your API key has Vertex AI enabled for Google Search grounding to work.
 
 ### 4. Deploy
 

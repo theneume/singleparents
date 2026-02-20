@@ -5,9 +5,9 @@ A comprehensive web platform supporting single parents in Adelaide, South Austra
 ## Features
 
 - 📚 **88+ Resources** across 18 categories including alternative education, health, and childcare
-- 🤖 **AI-Powered Chat** with Gemini API and comprehensive knowledge base
+- 🤖 **AI-Powered Chat** with Vertex AI + Google Search grounding
 - 🌱 **Alternative Approaches**: Montessori, Steiner, nature-based education, holistic health
-- 💬 **Real-time Support** with intelligent AI responses
+- 💬 **Real-time Support** with web search for current information
 - 🎨 **Modern Design** with orange color scheme and responsive layout
 
 ## Deployment
@@ -31,7 +31,7 @@ A comprehensive web platform supporting single parents in Adelaide, South Austra
    - Connect your GitHub repository
    - Render will automatically detect `render.yaml`
    - Set your environment variable:
-     - `GOOGLE_API_KEY`: Your Gemini API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+     - `GOOGLE_API_KEY`: Your Vertex AI API key with Vertex AI enabled (from [Google AI Studio](https://makersuite.google.com/app/apikey))
 
 ## Environment Variables
 
@@ -100,7 +100,7 @@ A comprehensive web platform supporting single parents in Adelaide, South Austra
 ## Features
 
 ### AI Chat
-- Vertex AI integration with Google Search grounding
+- Vertex AI integration with Google Search grounding (real-time web search)
 - Conversation memory and context
 - Real-time web search for events and current information
 - Detailed knowledge base for accurate responses

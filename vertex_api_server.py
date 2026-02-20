@@ -7,7 +7,8 @@ Handles real-time chat with Google Search grounding
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from datetime import datetime
 
 app = Flask(__name__, static_folder='.')
@@ -16,10 +17,15 @@ CORS(app)
 # Load API key from environment variable
 GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
 
-# Configure Gemini API
-genai.configure(api_key=GOOGLE_API_KEY)
+# Initialize Vertex AI client with API key
+client = genai.Client(
+    vertexai=True,
+    api_key=GOOGLE_API_KEY,
+    project="vertex-ai-explorer",  # Default project when using API key
+    location="us-central1"
+)
 
-print(f"✓ Gemini API client initialized")
+print(f"✓ Vertex AI client initialized with API key")
 
 # Serve static files
 @app.route('/')
@@ -98,18 +104,23 @@ Please provide a helpful, personal, and empathetic response."""
             'things to do', 'places to go', 'fun'
         ])
         
-        # Generate response with Gemini API
-        model = genai.GenerativeModel(
-            model_name="gemini-2.5-flash",
-            generation_config={
-                'temperature': 0.8,
-                'top_k': 40,
-                'top_p': 0.95,
-                'max_output_tokens': 2048
-            }
+        # Generate response with Vertex AI
+        config = types.GenerateContentConfig(
+            temperature=0.8,
+            top_k=40,
+            top_p=0.95,
+            max_output_tokens=2048
         )
         
-        response = model.generate_content(context)
+        # Add Google Search tool if needed
+        if needs_search:
+            config.tools = [types.Tool(google_search=types.GoogleSearch())]
+        
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=context,
+            config=config
+        )
         
         return jsonify({
             'response': response.text,
