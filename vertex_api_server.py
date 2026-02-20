@@ -7,25 +7,19 @@ Handles real-time chat with Google Search grounding
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
-from google import genai
-from google.genai import types
+import google.generativeai as genai
 from datetime import datetime
 
 app = Flask(__name__, static_folder='.')
 CORS(app)
 
-# Load environment variables
-GOOGLE_CLOUD_PROJECT = os.environ.get('GOOGLE_CLOUD_PROJECT')
-GOOGLE_CLOUD_LOCATION = os.environ.get('GOOGLE_CLOUD_LOCATION', 'us-central1')
+# Load API key from environment variable
+GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
 
-# Initialize Vertex AI client using environment variables
-client = genai.Client(
-    vertexai=True,
-    project=GOOGLE_CLOUD_PROJECT,
-    location=GOOGLE_CLOUD_LOCATION
-)
+# Configure Gemini API
+genai.configure(api_key=GOOGLE_API_KEY)
 
-print(f"✓ Vertex AI client initialized for project: {GOOGLE_CLOUD_PROJECT}")
+print(f"✓ Gemini API client initialized")
 
 # Serve static files
 @app.route('/')
@@ -104,23 +98,18 @@ Please provide a helpful, personal, and empathetic response."""
             'things to do', 'places to go', 'fun'
         ])
         
-        # Generate response with Vertex AI
-        config = types.GenerateContentConfig(
-            temperature=0.8,
-            top_k=40,
-            top_p=0.95,
-            max_output_tokens=2048
+        # Generate response with Gemini API
+        model = genai.GenerativeModel(
+            model_name="gemini-2.5-flash",
+            generation_config={
+                'temperature': 0.8,
+                'top_k': 40,
+                'top_p': 0.95,
+                'max_output_tokens': 2048
+            }
         )
         
-        # Add Google Search tool if needed
-        if needs_search:
-            config.tools = [types.Tool(google_search=types.GoogleSearch())]
-        
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=context,
-            config=config
-        )
+        response = model.generate_content(context)
         
         return jsonify({
             'response': response.text,

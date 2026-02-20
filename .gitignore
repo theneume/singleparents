@@ -29,6 +29,9 @@ wheels/
 .env.*.local
 
 # API Credentials - IMPORTANT: Don't commit credentials!
+.env
+.env.local
+.env.*.local
 *.json
 !package.json
 !package-lock.json

@@ -6,10 +6,17 @@ Before deploying, you'll need:
 
 1. **GitHub Account** - To host your code
 2. **Render Account** - Free account at [render.com](https://render.com)
-3. **Google Cloud Project** - With Vertex AI enabled
-4. **Service Account Key** - For Google Cloud authentication
+3. **Gemini API Key** - From [Google AI Studio](https://makersuite.google.com/app/apikey)
 
-## Step 1: Push to GitHub
+## Step 1: Get Gemini API Key
+
+1. Go to [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Sign in with your Google account
+3. Click "Create API Key"
+4. Copy your API key (starts with `AIza...`)
+5. **Important**: Keep this key secure - don't share it or commit to git
+
+## Step 2: Push to GitHub
 
 ### Option A: Create New Repository
 
@@ -33,40 +40,6 @@ git remote set-url origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
 git push -u origin main
 ```
 
-## Step 2: Configure Google Cloud
-
-### 1. Enable Vertex AI API
-
-```bash
-gcloud services enable aiplatform.googleapis.com --project=YOUR_PROJECT_ID
-```
-
-### 2. Create Service Account
-
-```bash
-gcloud iam service-accounts create vertex-ai-service \
-  --display-name="Vertex AI Service" \
-  --project=YOUR_PROJECT_ID
-```
-
-### 3. Grant Permissions
-
-```bash
-gcloud projects add-iam-policy-binding YOUR_PROJECT_ID \
-  --member="serviceAccount:vertex-ai-service@YOUR_PROJECT_ID.iam.gserviceaccount.com" \
-  --role="roles/aiplatform.user"
-```
-
-### 4. Create and Download Service Account Key
-
-```bash
-gcloud iam service-accounts keys create vertex-ai-key.json \
-  --iam-account=vertex-ai-service@YOUR_PROJECT_ID.iam.gserviceaccount.com \
-  --project=YOUR_PROJECT_ID
-```
-
-Open the `vertex-ai-key.json` file and copy its contents. You'll need this for Render.
-
 ## Step 3: Deploy to Render
 
 ### 1. Create New Web Service
@@ -87,22 +60,15 @@ Open the `vertex-ai-key.json` file and copy its contents. You'll need this for R
    - **Build Command**: `pip install -r requirements.txt`
    - **Start Command**: `gunicorn -w 4 -b 0.0.0.0:$PORT vertex_api_server:app`
 
-### 3. Add Environment Variables
+### 3. Add Environment Variable
 
-In the **Environment** section, add these variables:
+In the **Environment** section, add this variable:
 
 | Key | Value |
 |-----|-------|
-| `GOOGLE_CLOUD_PROJECT` | Your Google Cloud Project ID |
-| `GOOGLE_CLOUD_LOCATION` | `us-central1` |
-| `GOOGLE_APPLICATION_CREDENTIALS` | Paste the entire contents of `vertex-ai-key.json` (including `{}`) |
-| `PORT` | `10000` |
+| `GOOGLE_API_KEY` | Your Gemini API key (from Step 1) |
 
-**Important**: For `GOOGLE_APPLICATION_CREDENTIALS`, paste the entire JSON file content as a single string. It should look like:
-
-```
-{"type": "service_account", "project_id": "your-project", ...}
-```
+**Example**: `AIzaSyDLYn6mPglg7-3_w4SAdnGIxW4pdr2dNpk`
 
 ### 4. Deploy
 
@@ -151,45 +117,44 @@ Render will automatically redeploy on push.
 ### Runtime Errors
 
 - Check environment variables are set correctly
-- Verify `GOOGLE_APPLICATION_CREDENTIALS` is valid JSON
-- Ensure service account has correct permissions
+- Verify `GOOGLE_API_KEY` is valid
+- Review logs for authentication errors
 
 ### Chat Not Working
 
-- Verify Vertex AI API is enabled
-- Check service account has `aiplatform.user` role
-- Review logs for authentication errors
+- Verify API key is correct
+- Check API key has Gemini API access
+- Review logs for API errors
+- Ensure you're using a valid Gemini API key
 
 ### Slow Performance
 
 - Free tier has limited resources
 - Consider upgrading for better performance
-- Optimize code and database queries
+- Optimize code and queries
 
 ## Environment Variables Reference
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `GOOGLE_CLOUD_PROJECT` | Google Cloud Project ID | `realtime-chats` |
-| `GOOGLE_CLOUD_LOCATION` | Region for Vertex AI | `us-central1` |
-| `GOOGLE_APPLICATION_CREDENTIALS` | Service account JSON | `{"type": "service_account", ...}` |
+| `GOOGLE_API_KEY` | Gemini API key | `AIzaSyDLYn6mPglg7-3_w4SAdnGIxW4pdr2dNpk` |
 | `PORT` | Server port | `10000` |
 
 ## Security Notes
 
-1. **Never commit credentials** to git (they're in `.gitignore`)
+1. **Never commit API keys** to git (they're in `.gitignore`)
 2. **Use environment variables** for sensitive data
-3. **Rotate service account keys** regularly
-4. **Limit service account permissions** to only what's needed
-5. **Monitor usage** to detect unauthorized access
+3. **Rotate API keys** regularly
+4. **Monitor usage** to detect unauthorized access
+5. **Keep API keys secret** - don't share them
 
 ## Cost Management
 
 ### Free Tier Limits
 
 - Render Free: 750 hours/month
-- Vertex AI: Free tier available
-- Google Cloud: Check current pricing
+- Gemini API: Free tier available
+- Check current pricing at Google AI
 
 ### To Reduce Costs
 
@@ -204,8 +169,8 @@ If you encounter issues:
 
 1. Check Render status page
 2. Review deployment logs
-3. Verify Google Cloud console
-4. Check service account permissions
+3. Verify API key in Google AI Studio
+4. Check API key permissions
 
 For application-specific issues, contact: deepsyketech@proton.me
 

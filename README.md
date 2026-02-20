@@ -5,9 +5,9 @@ A comprehensive web platform supporting single parents in Adelaide, South Austra
 ## Features
 
 - 📚 **88+ Resources** across 18 categories including alternative education, health, and childcare
-- 🤖 **AI-Powered Chat** with Vertex AI and Google Search integration
+- 🤖 **AI-Powered Chat** with Gemini API and comprehensive knowledge base
 - 🌱 **Alternative Approaches**: Montessori, Steiner, nature-based education, holistic health
-- 💬 **Real-time Support** with knowledge base and web search
+- 💬 **Real-time Support** with intelligent AI responses
 - 🎨 **Modern Design** with orange color scheme and responsive layout
 
 ## Deployment
@@ -30,23 +30,14 @@ A comprehensive web platform supporting single parents in Adelaide, South Austra
    - Select "Web Service"
    - Connect your GitHub repository
    - Render will automatically detect `render.yaml`
-   - Set your environment variables:
-     - `GOOGLE_CLOUD_PROJECT`: Your Google Cloud Project ID
-     - `GOOGLE_CLOUD_LOCATION`: `us-central1` (or your preferred region)
-
-3. **Add Google Cloud Credentials**
-   - In Google Cloud Console, create a service account key
-   - Download the JSON file
-   - In Render dashboard, add environment variable:
-     - `GOOGLE_APPLICATION_CREDENTIALS`: Paste the entire JSON content
+   - Set your environment variable:
+     - `GOOGLE_API_KEY`: Your Gemini API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
 
 ## Environment Variables
 
 | Variable | Description | Required | Default |
 |----------|-------------|----------|---------|
-| `GOOGLE_CLOUD_PROJECT` | Google Cloud Project ID | Yes | - |
-| `GOOGLE_CLOUD_LOCATION` | Google Cloud region | No | `us-central1` |
-| `GOOGLE_APPLICATION_CREDENTIALS` | Service account credentials JSON | Yes | - |
+| `GOOGLE_API_KEY` | Gemini API key from Google AI Studio | Yes | - |
 | `PORT` | Port number | No | `10000` |
 
 ## Local Development
@@ -59,9 +50,7 @@ A comprehensive web platform supporting single parents in Adelaide, South Austra
 2. **Set up environment variables**
    Create a `.env` file:
    ```bash
-   GOOGLE_CLOUD_PROJECT=your-project-id
-   GOOGLE_CLOUD_LOCATION=us-central1
-   GOOGLE_APPLICATION_CREDENTIALS='{"type": "service_account", ...}'
+   GOOGLE_API_KEY=your-gemini-api-key-here
    ```
 
 3. **Run the server**
