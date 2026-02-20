@@ -1,0 +1,110 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# API Credentials - IMPORTANT: Don't commit credentials!
+*.json
+!package.json
+!package-lock.json
+!resources-data.json
+!knowledge-base.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+outputs/
+
+# Backup files
+*.backup
+*.bak
+*-backup-*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Test files
+test_*.py
+
+# Documentation files (optional - remove if you want to keep them)
+ADELAIDE_DOMAINS_FOR_SEARCH.md
+API_INTEGRATION_GUIDE.md
+DEPLOYMENT_SUMMARY.md
+ENABLE_CUSTOM_SEARCH_API.md
+ENHANCED_FEATURES.md
+FINAL_API_SETUP_INSTRUCTIONS.md
+FINAL_SUMMARY.md
+IMPLEMENTATION_COMPLETE.md
+PROJECT_UPDATE_COMPLETE.md
+QUICK_START.md
+SOLUTION_SUMMARY.md
+UPDATES_V2.md
+VERTEX_AI_IMPLEMENTATION_COMPLETE.md
+
+# Old JavaScript files (keep only app-vertex-ai.js)
+app-enhanced.js
+app-final.js
+app-reliable.js
+app-with-scraping.js
+app-with-search.js
+app.js
+
+# Old CSS files (keep only styles.css)
+styles-new.css
+
+# Old HTML backup files
+index-backup.html
+
+# Backup servers
+search-server.py
+
+# Zip files
+*.zip
+
+# Agent hooks
+.agent_hooks/
+
+# Summarized conversations
+summarized_conversations/
+
+# todo file
+todo.md
+
+# Test HTML
+test-api.html

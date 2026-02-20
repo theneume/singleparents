@@ -1,0 +1,839 @@
+{
+  "mentalHealthSupport": {
+    "overview": "Adelaide offers comprehensive mental health support services specifically designed for single parents and families going through separation. These services provide counselling, therapy, crisis support, and ongoing mental health care.",
+    "services": [
+      {
+        "name": "Beyond Blue",
+        "type": "24/7 Crisis Support",
+        "phone": "1300 22 4636",
+        "website": "https://www.beyondblue.org.au/",
+        "description": "Beyond Blue provides 24/7 support for anxiety, depression and suicide prevention. They offer phone counselling, online chat, and email support. Services are free and confidential.",
+        "availability": "24 hours, 7 days a week",
+        "services": [
+          "Phone counselling",
+          "Online chat",
+          "Email support",
+          "Mental health resources"
+        ],
+        "specialization": "Anxiety, depression, suicide prevention"
+      },
+      {
+        "name": "Lifeline",
+        "type": "Crisis Support",
+        "phone": "13 11 14",
+        "website": "https://www.lifeline.org.au/",
+        "description": "Lifeline provides 24/7 crisis support and suicide prevention services. Trained counsellors are available to talk through any issue, no matter how big or small.",
+        "availability": "24 hours, 7 days a week",
+        "services": [
+          "Crisis counselling",
+          "Text support (0477 13 11 14)",
+          "Online chat"
+        ],
+        "specialization": "Crisis intervention, suicide prevention, emotional support"
+      },
+      {
+        "name": "Relationships Australia SA - Family Mental Health Support",
+        "type": "Counselling Service",
+        "phone": "1300 364 277",
+        "website": "https://www.rasa.org.au/support/services/family-mental-health-support-service/",
+        "description": "Provides mental health support for families experiencing difficulties. Offers individual therapy, family counselling, and group programs specifically for families going through separation.",
+        "services": [
+          "Family counselling",
+          "Individual therapy",
+          "Group programs",
+          "Parenting support"
+        ],
+        "specialization": "Family mental health, separation support, parenting challenges"
+      },
+      {
+        "name": "Thrive Counselling Solutions Adelaide",
+        "type": "Specialist Counselling",
+        "website": "https://www.thrivecounsellingsolutions.com/",
+        "description": "Specializes in single parenting burnout and family counselling. Provides tailored support for the unique challenges faced by single parents.",
+        "services": [
+          "Individual counselling",
+          "Burnout support",
+          "Parenting support",
+          "Stress management"
+        ],
+        "specialization": "Single parent burnout, family counselling, stress management"
+      },
+      {
+        "name": "UnitingSA Mental Health Services",
+        "type": "Community Mental Health",
+        "phone": "1800 063 232",
+        "website": "https://unitingsa.com.au/community-services/mental-health/",
+        "description": "Provides comprehensive mental health services for individuals and families including counselling, support groups, and case management.",
+        "services": [
+          "Counselling",
+          "Support groups",
+          "Case management",
+          "Mental health programs"
+        ],
+        "specialization": "Community mental health, family support"
+      },
+      {
+        "name": "Baptist Care SA - Family Wellbeing Service",
+        "type": "Family Support",
+        "phone": "1300 227 847",
+        "website": "https://baptistcaresa.org.au/service/family-wellbeing-service",
+        "description": "Supports families experiencing stress and mental health challenges with counselling, parenting support, and mental health programs.",
+        "services": [
+          "Family counselling",
+          "Parenting support",
+          "Mental health programs",
+          "Stress management"
+        ],
+        "specialization": "Family wellbeing, parenting support"
+      }
+    ],
+    "emergencyContacts": {
+      "immediate": "If you are in immediate danger or experiencing a mental health crisis, call 000 for emergency services.",
+      "crisis": "For mental health crisis support, call Lifeline on 13 11 14 or Beyond Blue on 1300 22 4636 - both available 24/7."
+    }
+  },
+  "legalSupport": {
+    "overview": "Adelaide provides free and affordable legal services for single parents dealing with separation, custody arrangements, family law matters, and mediation. These services help navigate the legal system and protect your rights.",
+    "services": [
+      {
+        "name": "Legal Services Commission of SA",
+        "type": "Free Legal Advice",
+        "phone": "1300 366 424",
+        "website": "https://lsc.sa.gov.au/",
+        "description": "Provides free legal advice and representation for family law matters. Offers legal advice clinics, court representation, and family dispute resolution services.",
+        "services": [
+          "Legal advice",
+          "Court representation",
+          "Family law assistance",
+          "Family dispute resolution"
+        ],
+        "eligibility": "Income and asset tests apply for some services",
+        "specialization": "Family law, separation, custody, property settlement"
+      },
+      {
+        "name": "Community Justice Services SA",
+        "type": "Free Legal Help",
+        "phone": "1800 430 599",
+        "website": "https://www.communityjusticesa.org.au/",
+        "description": "Provides free legal help for everyone in South Australia. No means test required for initial advice.",
+        "services": [
+          "Legal advice",
+          "Court support",
+          "Community legal education",
+          "Referrals"
+        ],
+        "specialization": "Family law, domestic violence, general legal matters"
+      },
+      {
+        "name": "Women's Legal Service SA",
+        "type": "Specialist Legal Service",
+        "phone": "1800 188 158",
+        "website": "https://www.wlsa.org.au/",
+        "description": "Free legal service for women in SA providing advice on family law, domestic violence, and related matters.",
+        "services": [
+          "Family law advice",
+          "Domestic violence support",
+          "Legal representation",
+          "Court support"
+        ],
+        "eligibility": "For women experiencing or at risk of family violence",
+        "specialization": "Family law, domestic violence, women's rights"
+      },
+      {
+        "name": "Family Relationship Advice Line",
+        "type": "Information Service",
+        "phone": "1800 050 321",
+        "website": "https://www.familyrelationships.gov.au/",
+        "description": "National service providing information about family relationship issues and services. Can help you find local services and understand your options.",
+        "availability": "Monday to Friday, 8am to 8pm, Saturday 10am to 4pm",
+        "services": [
+          "Information",
+          "Referrals",
+          "Support",
+          "Service navigation"
+        ]
+      },
+      {
+        "name": "amica",
+        "type": "Online Separation Tool",
+        "website": "https://amica.gov.au/",
+        "description": "Free online tool to help separating couples make arrangements about children, property, and finances. Simple, smart way to separate or divorce online.",
+        "services": [
+          "Online separation planning",
+          "Parenting arrangements",
+          "Property division",
+          "Financial agreements"
+        ],
+        "features": "Self-paced, confidential, can be used together or separately"
+      },
+      {
+        "name": "Parents Beyond Breakup",
+        "type": "Support Service",
+        "phone": "1300 853 437",
+        "website": "https://www.parentsbeyondbreakup.com/",
+        "description": "Provides support for parents going through separation including counselling, legal information, and parenting support.",
+        "services": [
+          "Counselling",
+          "Legal information",
+          "Parenting support",
+          "Peer support"
+        ]
+      }
+    ],
+    "keyInformation": {
+      "custody": "In Australia, the term 'custody' is no longer used. The Family Law Act uses 'parental responsibility' and 'living arrangements' instead.",
+      "mediation": "Family dispute resolution (mediation) is usually required before going to court for parenting matters.",
+      "property": "Property settlement can be negotiated at any time after separation, but court applications must be made within 12 months of divorce.",
+      "childSupport": "Child support is separate from parenting arrangements and is managed by Services Australia."
+    }
+  },
+  "mensSupport": {
+    "overview": "Adelaide offers dedicated support services for single fathers and men going through separation. These services provide counselling, legal support, peer connections, and parenting programs specifically designed for men.",
+    "services": [
+      {
+        "name": "MensLine Australia",
+        "type": "24/7 Support Line",
+        "phone": "1300 789 978",
+        "website": "https://mensline.org.au/",
+        "description": "24/7 telephone and online counselling service for men with family and relationship concerns. Professional counsellors provide support for separation, parenting, mental health, and relationship issues.",
+        "availability": "24 hours, 7 days a week",
+        "services": [
+          "Phone counselling",
+          "Online counselling",
+          "Video counselling",
+          "Relationship support"
+        ],
+        "specialization": "Men's mental health, fatherhood, separation, relationships"
+      },
+      {
+        "name": "Dads in Distress",
+        "type": "Support Service",
+        "phone": "1300 853 437",
+        "website": "https://www.parentsbeyondbreakup.com/dids",
+        "description": "Provides support for fathers experiencing family breakdown and separation. Offers peer support, counselling, legal information, and parenting support specifically for dads.",
+        "services": [
+          "Peer support",
+          "Counselling",
+          "Legal information",
+          "Parenting support"
+        ],
+        "specialization": "Father support, family breakdown, separation"
+      },
+      {
+        "name": "Anglicare SA - Dads Moving Towards Responsibility",
+        "type": "Parenting Program",
+        "phone": "1300 769 772",
+        "website": "https://anglicaresa.com.au/services/families/dads-moving-towards-responsibility/",
+        "description": "Program supporting fathers to develop positive parenting skills and build strong relationships with their children. Group-based program with individual support available.",
+        "services": [
+          "Parenting programs",
+          "Group support",
+          "Individual support",
+          "Skill development"
+        ],
+        "specialization": "Fatherhood, parenting skills, father-child relationships"
+      },
+      {
+        "name": "Dads of Adelaide (Facebook Group)",
+        "type": "Social Support",
+        "website": "https://www.facebook.com/groups/dadsofadelaide/",
+        "description": "Active Facebook community for fathers in Adelaide. Share experiences, get advice, organize meetups, and connect with other dads in the local area.",
+        "services": [
+          "Peer support",
+          "Social connections",
+          "Information sharing",
+          "Meetups"
+        ],
+        "members": "Large active community of Adelaide fathers"
+      },
+      {
+        "name": "Men's Legal Service SA",
+        "type": "Legal Support",
+        "phone": "1300 377 687",
+        "website": "https://www.menslegalservice.org.au/",
+        "description": "Free legal advice for men on family law matters including separation, custody, property settlement, and court preparation.",
+        "services": [
+          "Legal advice",
+          "Family law",
+          "Custody support",
+          "Court preparation"
+        ],
+        "eligibility": "For men in South Australia",
+        "specialization": "Men's family law, custody, separation"
+      },
+      {
+        "name": "Lutheran Care - Men's Support",
+        "type": "Counselling Service",
+        "phone": "1800 720 642",
+        "website": "https://www.lutherancare.org.au/mens-support/",
+        "description": "Counselling and support services specifically designed for men. Addresses mental health, relationships, parenting, and life skills.",
+        "services": [
+          "Individual counselling",
+          "Group programs",
+          "Mental health support",
+          "Life skills"
+        ],
+        "specialization": "Men's mental health, counselling, life skills"
+      }
+    ],
+    "keyTopics": {
+      "fatherhood": "Being a single father comes with unique challenges. Support services can help with parenting skills, work-life balance, and maintaining strong relationships with children.",
+      "mentalHealth": "Men often face barriers in seeking mental health support. Services like MensLine Australia provide confidential, judgment-free support specifically for men.",
+      "legalRights": "Fathers have equal rights in family law. Legal services can help you understand your rights regarding custody, parenting time, and property settlement.",
+      "peerSupport": "Connecting with other single fathers can provide valuable support, advice, and friendship during difficult times."
+    }
+  },
+  "familyEvents": {
+    "overview": "Adelaide offers numerous family events, playgroups, and activities for single parents and their children. These provide opportunities for social connection, fun activities, and community support.",
+    "programs": [
+      {
+        "name": "Banana Splitz",
+        "provider": "Anglicare SA",
+        "phone": "1300 769 772",
+        "website": "https://anglicaresa.com.au/services/families/post-separation-support-children/",
+        "description": "Award-winning program supporting children aged 6-12 going through family separation. Provides peer support groups where children can share experiences, learn coping strategies, and build resilience.",
+        "ageGroup": "6-12 years",
+        "format": "Group program, typically 6-8 weeks",
+        "cost": "Free or low cost",
+        "benefits": [
+          "Peer support",
+          "Emotional support",
+          "Coping strategies",
+          "Professional facilitation"
+        ],
+        "referral": "Contact Anglicare SA to register or get more information"
+      },
+      {
+        "name": "Circle of Security",
+        "providers": [
+          "Relationships Australia SA",
+          "Centacare"
+        ],
+        "phone": "1300 364 277 (RASA), (08) 8215 6700 (Centacare)",
+        "websites": [
+          "https://www.rasa.org.au/group-workshops/circle-of-security/",
+          "https://www.centacare.org.au/courses-events/"
+        ],
+        "description": "Evidence-based parenting program helping parents develop secure, trusting relationships with their children through understanding attachment. Suitable for all parents including single parents.",
+        "format": "8-week group program",
+        "topics": [
+          "Attachment theory",
+          "Understanding children's needs",
+          "Building secure relationships",
+          "Parenting strategies"
+        ],
+        "benefits": [
+          "Improved parent-child relationships",
+          "Better understanding of child behavior",
+          "Practical parenting strategies",
+          "Peer support"
+        ],
+        "availability": "Regular programs throughout the year"
+      },
+      {
+        "name": "Communities for Children",
+        "provider": "Anglicare SA",
+        "phone": "1300 769 772",
+        "website": "https://anglicaresa.com.au/services/families/communities-for-children/",
+        "description": "Free family activities, playgroups, and community events connecting families in Adelaide. Provides opportunities for children to play and parents to connect.",
+        "services": [
+          "Playgroups",
+          "Family activities",
+          "Community events",
+          "Parent programs"
+        ],
+        "cost": "Free",
+        "locations": "Multiple locations across Adelaide"
+      }
+    ],
+    "eventResources": [
+      {
+        "name": "Kids in Adelaide",
+        "website": "https://kidsinadelaide.com.au/",
+        "description": "Comprehensive guide to family events, activities, and things to do with kids in Adelaide. Updated regularly with current events, school holiday programs, and free activities.",
+        "features": [
+          "Event calendar",
+          "Activity guides",
+          "Free events",
+          "School holiday programs",
+          "Reviews"
+        ]
+      },
+      {
+        "name": "Playgroup SA",
+        "phone": "(08) 8344 2722",
+        "website": "https://www.playgroupsa.com.au/",
+        "description": "Find local playgroups across South Australia. Playgroups provide opportunities for children to play and learn while parents connect with other families.",
+        "services": [
+          "Playgroup finder",
+          "Community connections",
+          "Parent support",
+          "Child activities"
+        ],
+        "searchTool": "Use their website to find playgroups by suburb or postcode"
+      }
+    ],
+    "typesOfEvents": {
+      "playgroups": "Regular meetups for parents and young children (0-5 years) to play, socialize, and connect with other families.",
+      "schoolHolidays": "Special programs and activities during school holidays including workshops, excursions, and entertainment.",
+      "freeEvents": "Many free family events throughout the year including festivals, outdoor movies, library programs, and community celebrations.",
+      "libraries": "Adelaide City Libraries offer free story times, school holiday programs, and family activities.",
+      "parks": "Adelaide has numerous parks and playgrounds perfect for family outings and meetups."
+    }
+  },
+  "childDevelopment": {
+    "overview": "Adelaide provides comprehensive child development services including psychology, therapy, parenting programs, and developmental assessments for children of all ages.",
+    "services": [
+      {
+        "name": "Child and Family Health Service (CaFHS)",
+        "phone": "1300 733 606",
+        "website": "https://www.cafhs.sa.gov.au/",
+        "description": "Free government service providing health and development support for children 0-5 years. Offers health checks, parenting support, and developmental assessments.",
+        "ageGroup": "0-5 years",
+        "services": [
+          "Health checks",
+          "Parenting support",
+          "Development assessments",
+          "Breastfeeding support"
+        ],
+        "cost": "Free",
+        "locations": "Multiple centers across Adelaide"
+      },
+      {
+        "name": "Kid Sense Child Development",
+        "phone": "(08) 8332 1866",
+        "website": "https://childdevelopment.com.au/",
+        "description": "Provides occupational therapy and speech pathology for children. Helps with developmental delays, learning difficulties, and behavioral challenges.",
+        "services": [
+          "Occupational therapy",
+          "Speech therapy",
+          "Developmental assessments",
+          "School readiness programs"
+        ],
+        "specialization": "Developmental delays, learning difficulties, sensory processing"
+      }
+    ],
+    "parentingPrograms": {
+      "circleOfSecurity": "Evidence-based program focusing on attachment and building secure parent-child relationships.",
+      "triplePPositiveParenting": "Practical strategies for managing behavior and building positive family relationships.",
+      "parentingUnderPressure": "For parents experiencing stress, mental health issues, or substance use challenges."
+    }
+  },
+  "financialSupport": {
+    "overview": "Financial support is available for single parents through government payments, emergency relief, financial counselling, and housing assistance.",
+    "governmentPayments": {
+      "parentingPayment": {
+        "name": "Parenting Payment Single",
+        "provider": "Services Australia",
+        "phone": "136 150",
+        "website": "https://www.servicesaustralia.gov.au/parenting-payment",
+        "description": "Income support for single parents. Higher rate than JobSeeker Payment.",
+        "eligibility": "Single parent with dependent child under 8 years (or under 6 if you started receiving payment before 20 September 2023)",
+        "amount": "Varies based on circumstances, updated regularly",
+        "additionalBenefits": [
+          "Family Tax Benefit",
+          "Rent Assistance",
+          "Health Care Card"
+        ]
+      },
+      "familyTaxBenefit": {
+        "name": "Family Tax Benefit",
+        "provider": "Services Australia",
+        "phone": "136 150",
+        "description": "Payment to help with the cost of raising children. Two parts: Part A (per child) and Part B (single parents or families with one main income).",
+        "eligibility": "Families with dependent children",
+        "partA": "Per child payment, income tested",
+        "partB": "Additional payment for single parents or families with one main income"
+      },
+      "childCareSubsidy": {
+        "name": "Child Care Subsidy",
+        "provider": "Services Australia",
+        "description": "Helps with the cost of approved child care. Percentage of fees covered depends on family income.",
+        "eligibility": "Families using approved child care",
+        "coverage": "Up to 90% of fees for eligible families"
+      }
+    },
+    "emergencyRelief": [
+      {
+        "name": "UnitingCare Wesley Bowden - Emergency Relief",
+        "phone": "(08) 8202 5190",
+        "website": "https://ucwb.org.au/financial-wellbeing/emergency-relief/",
+        "description": "Emergency financial assistance and food relief for people in crisis.",
+        "services": [
+          "Food vouchers",
+          "Financial assistance",
+          "Material aid",
+          "Referrals"
+        ],
+        "eligibility": "People experiencing financial crisis"
+      },
+      {
+        "name": "Salvation Army Emergency Relief",
+        "phone": "1300 371 288",
+        "description": "Emergency assistance including food, financial aid, and material support.",
+        "services": [
+          "Food assistance",
+          "Financial aid",
+          "Material support",
+          "Referrals"
+        ]
+      }
+    ],
+    "financialCounselling": {
+      "overview": "Free financial counselling helps with budgeting, debt management, and financial planning.",
+      "services": [
+        {
+          "name": "National Debt Helpline",
+          "phone": "1800 007 007",
+          "description": "Free financial counselling service for anyone in financial difficulty.",
+          "availability": "Monday to Friday, 9:30am to 4:30pm"
+        }
+      ]
+    }
+  },
+  "housingSupport": {
+    "overview": "Housing support includes emergency accommodation, transitional housing, rental assistance, and public housing options.",
+    "services": [
+      {
+        "name": "SA Housing Trust - Emergency Accommodation",
+        "phone": "131 108",
+        "website": "https://www.housing.sa.gov.au/housing-supports/emergency-accommodation",
+        "description": "Emergency accommodation assistance for people in housing crisis.",
+        "services": [
+          "Emergency housing",
+          "Crisis accommodation",
+          "Support services"
+        ],
+        "availability": "24/7 for emergencies"
+      }
+    ],
+    "rentalAssistance": {
+      "name": "Rent Assistance",
+      "provider": "Services Australia",
+      "description": "Payment to help with rent costs if you receive certain Centrelink payments.",
+      "eligibility": "Must be paying rent and receiving eligible Centrelink payment",
+      "amount": "Varies based on rent paid and family situation"
+    }
+  },
+  "emergencyServices": {
+    "immediate": {
+      "emergency": {
+        "number": "000",
+        "description": "For life-threatening emergencies including police, ambulance, and fire services.",
+        "when": "Immediate danger, medical emergency, crime in progress"
+      }
+    },
+    "crisis": {
+      "lifeline": {
+        "number": "13 11 14",
+        "name": "Lifeline",
+        "description": "24/7 crisis support and suicide prevention",
+        "availability": "24 hours, 7 days a week"
+      },
+      "beyondBlue": {
+        "number": "1300 22 4636",
+        "name": "Beyond Blue",
+        "description": "24/7 support for anxiety, depression and suicide prevention",
+        "availability": "24 hours, 7 days a week"
+      },
+      "domesticViolence": {
+        "number": "1800 800 098",
+        "name": "SA Domestic Violence Crisis Line",
+        "description": "24/7 support for people experiencing domestic violence",
+        "availability": "24 hours, 7 days a week"
+      },
+      "mensLine": {
+        "number": "1300 789 978",
+        "name": "MensLine Australia",
+        "description": "24/7 support for men with family and relationship concerns",
+        "availability": "24 hours, 7 days a week"
+      },
+      "parentHelpline": {
+        "number": "1300 364 100",
+        "name": "Parent Helpline",
+        "description": "Telephone counselling for parents",
+        "availability": "Monday to Friday, 9am to 9pm"
+      }
+    }
+  },
+  "generalInformation": {
+    "aboutAdelaide": "Adelaide is the capital city of South Australia with a population of over 1.3 million. It's known for its family-friendly environment, parks, beaches, and strong community support services.",
+    "singleParentStatistics": "Approximately 15-20% of Australian families are single-parent families. Single parents face unique challenges but also have access to comprehensive support services.",
+    "separationProcess": "Separation is a legal process that occurs when a couple decides to live apart. In Australia, you must be separated for 12 months before you can apply for divorce. However, you can make arrangements for children and property at any time.",
+    "coParenting": "Co-parenting involves both parents working together to raise their children after separation. Focus on the children's best interests, maintain respectful communication, and be flexible with arrangements.",
+    "childSupport": "Child support is financial support paid by one parent to another to help with the costs of raising children. It's separate from parenting arrangements and is managed by Services Australia."
+  },
+  "child_health": {
+    "services": [
+      "Child and Family Health Service (CaFHS) - Free health services for children 0-5 years",
+      "Women's and Children's Hospital - Specialist hospital for women, babies and children",
+      "WCH Immunisation Clinic - Free immunisation services",
+      "City of Adelaide Immunisation Clinics - Free community immunisation services",
+      "Little Pear Family Practice and Adelaide Health Care - Family-friendly GPs with paediatric experience"
+    ],
+    "key_information": [
+      "CaFHS provides free developmental checks, immunisations, and parenting support for children 0-5 years",
+      "Call CaFHS on 1300 733 606 for appointments",
+      "WCH Emergency is available 24/7 for children needing urgent medical care",
+      "Free immunisation clinics are available at WCH and City of Adelaide locations",
+      "Regular GP visits are important for ongoing child health monitoring"
+    ],
+    "milestones": [
+      "Birth checks - First week",
+      "6-8 weeks - First immunisations and health check",
+      "4 months - Developmental assessment",
+      "12 months - Major health check",
+      "18 months - Developmental assessment",
+      "2 years - Health and development check",
+      "3-4 years - Preschool health check"
+    ],
+    "common_concerns": [
+      "Fever and illness - Contact GP or Healthdirect on 1800 022 222",
+      "Developmental delays - Contact CaFHS for assessment",
+      "Immunisation questions - Call WCH Immunisation Clinic on (08) 8161 7319",
+      "Sleep and feeding issues - Contact CaFHS for support",
+      "Behavioural concerns - Discuss with GP or CaFHS"
+    ]
+  },
+  "sports_recreation": {
+    "services": [
+      "Simply Sports - Multi-sport programs for ages 2-12",
+      "MyFirstGym - Gymnastics and fitness for ages 1-13",
+      "Little Dragons - Martial arts for ages 3-6",
+      "YMCA SA - Community sports and recreation programs",
+      "Seacliff Recreation Centre - Various sports activities"
+    ],
+    "benefits": [
+      "Physical development and fitness",
+      "Social skills and teamwork",
+      "Confidence building",
+      "Discipline and focus",
+      "Stress relief and mental health benefits",
+      "Making new friends and community connection"
+    ],
+    "age_groups": {
+      "toddlers (1-3)": "MyFirstGym classes, basic movement programs",
+      "preschoolers (3-5)": "Little Dragons martial arts, Simply Sports intro programs",
+      "early school (5-8)": "Multi-sport programs, gymnastics, team sports",
+      "older children (9-12)": "Advanced classes, team competitions, specialised sports"
+    },
+    "financial_support": [
+      "Sports vouchers available through state government",
+      "Club fee subsidies may be available for low-income families",
+      "Ask providers about payment plans",
+      "Some programs offer free trial classes"
+    ],
+    "contact_tips": [
+      "Contact Simply Sports on (08) 8352 7755 for program information",
+      "Call MyFirstGym on 1800 653 634 for locations and programs",
+      "Visit local YMCA for affordable community programs",
+      "Check City of Marion website for Seacliff Recreation Centre programs"
+    ]
+  },
+  "arts_expression": {
+    "services": [
+      "Theatre Bugs - Drama, dance, singing for ages 1-12",
+      "Music Eternal - Music lessons for various instruments",
+      "Mini Ivy Art School - Art classes for ages 3-6",
+      "Urth Clay Studio - Pottery and ceramics",
+      "Resilient Kicks - Art therapy (NDIS approved)"
+    ],
+    "benefits": [
+      "Emotional expression and processing",
+      "Creative development",
+      "Fine motor skills improvement",
+      "Confidence building",
+      "Stress relief and mental health",
+      "Social connection through group classes"
+    ],
+    "disciplines": {
+      "performing_arts": "Theatre Bugs offers drama, dance, and singing in a fun, supportive environment",
+      "music": "Music Eternal provides lessons for piano, guitar, violin and other instruments with free trial lessons",
+      "visual_arts": "Mini Ivy Art School and Urth Clay Studio offer visual arts and pottery",
+      "art_therapy": "Resilient Kicks specialises in art therapy for children with special needs"
+    },
+    "special_needs_support": [
+      "Resilient Kicks is NDIS approved for art therapy",
+      "Many arts providers are experienced with neurodiverse children",
+      "Contact providers to discuss specific needs",
+      "Art can be particularly beneficial for children with anxiety or autism"
+    ],
+    "early_childhood": {
+      "toddlers": "Music and movement classes, sensory art activities",
+      "preschoolers": "Structured drama classes, introductory music lessons",
+      "school_age": "Ongoing lessons in chosen discipline, performance opportunities"
+    },
+    "contact_information": [
+      "Theatre Bugs: (08) 8332 1222 - drama, dance, singing classes",
+      "Music Eternal: 0402 333 456 - various instruments, free trial",
+      "Urth Clay Studio: 0404 243 884 - pottery and ceramics",
+      "Resilient Kicks: 0411 234 567 - art therapy, NDIS approved"
+    ]
+  },
+  "rural_remote": {
+    "services": [
+      "Rural & Remote Mental Health - 1800 552 002",
+      "Rural Support Service - 1300 654 654",
+      "Angel Flight Australia - Free medical transport",
+      "Family Day Care SA - Rural childcare options",
+      "Healthdirect - 24/7 health advice - 1800 022 222"
+    ],
+    "challenges": [
+      "Limited access to specialist services",
+      "Travel requirements for medical appointments",
+      "Social isolation and limited community services",
+      "Long wait times for appointments",
+      "Limited childcare options",
+      "Cost of travel for medical care"
+    ],
+    "key_services": {
+      "mental_health": "Rural & Remote Mental Health provides counselling, psychiatric support and telehealth services",
+      "travel_support": "Rural Support Service assists with accommodation and travel for medical appointments",
+      "medical_transport": "Angel Flight provides free non-emergency medical flights",
+      "health_advice": "Healthdirect offers 24/7 health advice and local service information",
+      "childcare": "Family Day Care SA offers home-based childcare in rural areas"
+    },
+    "telehealth": [
+      "Many services now offer telehealth consultations",
+      "Mental health appointments can be done via video",
+      "Specialist medical consultations available remotely",
+      "Contact your local health service to arrange telehealth"
+    ],
+    "travel_assistance": [
+      "Rural Support Service provides coordination and travel support",
+      "Angel Flight offers free medical flights for non-emergency transport",
+      "Some services provide accommodation assistance",
+      "Patient travel subsidies may be available",
+      "Contact Rural Support Service on 1300 654 654 for assistance"
+    ],
+    "emergency_contact": [
+      "For medical emergencies: Call 000",
+      "For mental health crises: Rural & Remote Mental Health 1800 552 002",
+      "For health advice: Healthdirect 1800 022 222",
+      "For patient travel assistance: Rural Support Service 1300 654 654"
+    ]
+  },
+  "alternative_education": {
+    "philosophy": [
+      "Montessori education follows Maria Montessori's child-led approach with prepared environments and independence focus",
+      "Steiner/Waldorf education follows Rudolf Steiner's holistic approach integrating arts, imagination, and developmental stages",
+      "Nature-based education prioritizes outdoor learning, nature connection, and environmental stewardship",
+      "Forest schools originated in Scandinavia, emphasizing outdoor learning, risk-taking, and bushcraft skills",
+      "Alternative education often avoids or minimises standardised testing, homework, and rigid academic pressure"
+    ],
+    "key_differences": [
+      "Child-led learning vs teacher-directed instruction",
+      "Multi-age classrooms instead of single-grade grouping",
+      "Hands-on materials and real-world experiences over textbooks",
+      "Holistic development (social, emotional, physical, spiritual) alongside academic learning",
+      "Respect for individual learning pace and developmental readiness",
+      "Focus on creativity, imagination, and critical thinking rather than rote memorization"
+    ],
+    "services": [
+      "Steiner School Adelaide (Agora) - Full Steiner program from playgroup to Year 12",
+      "Southern Montessori School - Independent Montessori education to Year 7",
+      "Yankalilla Area School - Public Montessori program within government system",
+      "Nature Play SA - Resources and advocacy for nature-based learning",
+      "Little Forest Folk - Forest school programs for outdoor adventure"
+    ],
+    "benefits": [
+      "Children develop intrinsic motivation and love of learning",
+      "Reduced stress and anxiety without competitive testing",
+      "Strong connection to nature and environmental awareness",
+      "Development of practical life skills and independence",
+      "Individualized attention and respect for unique needs",
+      "Community and social-emotional development prioritized"
+    ],
+    "criticism_of_mainstream": [
+      "Standardised testing creates stress and doesn't reflect real learning",
+      "Rigorous academic pressure causes mental health issues",
+      "Limited outdoor time and nature disconnection",
+      "One-size-fits-all approach ignores individual differences",
+      "Over-reliance on screens and technology in education",
+      "Lack of focus on practical life skills and creativity"
+    ]
+  },
+  "alternative_health": {
+    "approaches": [
+      "Naturopathy uses herbal medicine, nutrition, and lifestyle to support body's healing ability",
+      "Homeopathy uses highly diluted substances to stimulate healing responses",
+      "Chiropractic focuses on nervous system function through spinal adjustments",
+      "Osteopathy uses manual therapy to support body structure and function",
+      "Nutritional medicine uses food and supplements as therapeutic tools",
+      "Traditional Chinese Medicine includes acupuncture, herbs, and dietary therapy"
+    ],
+    "principles": [
+      "Treat the root cause, not just symptoms",
+      "Support the body's innate healing ability",
+      "Use natural, non-invasive treatments when possible",
+      "Focus on prevention and wellness rather than just disease management",
+      "Consider the whole person - physical, mental, emotional, spiritual",
+      "Minimise pharmaceutical interventions and their side effects"
+    ],
+    "services": [
+      "Naturopathic Consultations - Holistic natural health for children",
+      "Homeopathy Plus! - Gentle homeopathic treatments",
+      "Chiropractic Care - Gentle paediatric adjustments",
+      "Adelaide Osteopathic Clinic - Manual therapy for children",
+      "Nutritional Medicine SA - Food as medicine approach",
+      "Chinese Medicine for Children - TCM for paediatric health"
+    ],
+    "criticism_of_conventional": [
+      "Overuse of antibiotics and pharmaceuticals",
+      "Focus on symptom suppression rather than addressing causes",
+      "Quick-fix mentality ignores lifestyle factors",
+      "Side effects of medications often worse than conditions",
+      "Limited time with patients leading to superficial treatment",
+      "Reactive rather than proactive approach to health"
+    ],
+    "common_conditions": [
+      "Ear infections - often managed without antibiotics",
+      "Digestive issues - addressed through diet and natural remedies",
+      "Skin conditions - treated with topical and internal natural approaches",
+      "Immune support - strengthening natural immunity rather than just vaccination",
+      "Behavioural issues - addressed through nutrition and lifestyle factors",
+      "Sleep problems - natural sleep support without pharmaceutical sedatives"
+    ]
+  },
+  "alternative_childcare": {
+    "approaches": [
+      "Nature-based childcare prioritises outdoor play and natural environments",
+      "Montessori childcare uses prepared environments and child-led activities",
+      "Steiner playgroups focus on rhythm, imagination, and natural materials",
+      "Forest school childcare allows children to learn outdoors in all weather",
+      "Creative arts childcare emphasises self-expression through various media"
+    ],
+    "principles": [
+      "Children need connection to nature for healthy development",
+      "Small group sizes and quality relationships are essential",
+      "Respect for children's autonomy and choices",
+      "Natural materials and toys over plastic and electronics",
+      "Rhythm and predictability create security for young children",
+      "Outdoor play should be available regardless of weather"
+    ],
+    "services": [
+      "Nature Explorers Early Learning - Nature-based long day care",
+      "Montessori Early Learning Centre - Child-led Montessori program",
+      "Steiner Playgroup Adelaide - Rhythmic playgroup for young children",
+      "Forest School SA - Outdoor learning programs",
+      "Creative Kids Collective - Arts-focused childcare",
+      "Home-Based Alternative Care - Small group home-based options"
+    ],
+    "criticism_of_mainstream": [
+      "Too much time indoors in artificial environments",
+      "Over-reliance on screens and electronic toys",
+      "Large group sizes compromise individual attention",
+      "Rigid routines ignore children's natural rhythms",
+      "Focus on academic preparation rather than play and exploration",
+      "Lack of connection to nature and outdoors"
+    ],
+    "benefits": [
+      "Children develop stronger immune systems from outdoor play",
+      "Creativity and imagination flourish without electronic toys",
+      "Physical development enhanced by natural environments",
+      "Reduced stress and anxiety from natural settings",
+      "Development of environmental awareness and stewardship",
+      "Better social skills in smaller, mixed-age groups"
+    ]
+  }
+}

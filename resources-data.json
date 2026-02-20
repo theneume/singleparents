@@ -1,0 +1,1336 @@
+{
+  "mentalHealth": [
+    {
+      "name": "Beyond Blue",
+      "type": "24/7 Support Line",
+      "phone": "1300 22 4636",
+      "website": "https://www.beyondblue.org.au/",
+      "description": "24/7 support for anxiety, depression and suicide prevention",
+      "services": [
+        "Phone counselling",
+        "Online chat",
+        "Email support"
+      ]
+    },
+    {
+      "name": "Lifeline",
+      "type": "Crisis Support",
+      "phone": "13 11 14",
+      "website": "https://www.lifeline.org.au/",
+      "description": "24/7 crisis support and suicide prevention",
+      "services": [
+        "Crisis counselling",
+        "Text support"
+      ]
+    },
+    {
+      "name": "Relationships Australia SA - Family Mental Health Support",
+      "type": "Counselling Service",
+      "phone": "1300 364 277",
+      "website": "https://www.rasa.org.au/support/services/family-mental-health-support-service/",
+      "description": "Mental health support for families experiencing difficulties",
+      "services": [
+        "Family counselling",
+        "Individual therapy",
+        "Group programs"
+      ]
+    },
+    {
+      "name": "Thrive Counselling Solutions Adelaide",
+      "type": "Specialist Counselling",
+      "website": "https://www.thrivecounsellingsolutions.com/",
+      "description": "Specializes in single parenting burnout and family counselling",
+      "services": [
+        "Individual counselling",
+        "Burnout support",
+        "Parenting support"
+      ]
+    },
+    {
+      "name": "UnitingSA Mental Health Services",
+      "type": "Community Mental Health",
+      "phone": "1800 063 232",
+      "website": "https://unitingsa.com.au/community-services/mental-health/",
+      "description": "Mental health services for individuals and families",
+      "services": [
+        "Counselling",
+        "Support groups",
+        "Case management"
+      ]
+    },
+    {
+      "name": "Baptist Care SA - Family Wellbeing Service",
+      "type": "Family Support",
+      "phone": "1300 227 847",
+      "website": "https://baptistcaresa.org.au/service/family-wellbeing-service",
+      "description": "Support for families experiencing stress and mental health challenges",
+      "services": [
+        "Family counselling",
+        "Parenting support",
+        "Mental health programs"
+      ]
+    }
+  ],
+  "legalServices": [
+    {
+      "name": "Legal Services Commission of SA",
+      "type": "Free Legal Advice",
+      "phone": "1300 366 424",
+      "website": "https://lsc.sa.gov.au/",
+      "description": "Free legal advice and representation for family law matters",
+      "services": [
+        "Legal advice",
+        "Court representation",
+        "Family law assistance"
+      ]
+    },
+    {
+      "name": "Community Justice Services SA",
+      "type": "Free Legal Help",
+      "phone": "1800 430 599",
+      "website": "https://www.communityjusticesa.org.au/",
+      "description": "Free legal help for everyone in South Australia",
+      "services": [
+        "Legal advice",
+        "Court support",
+        "Community legal education"
+      ]
+    },
+    {
+      "name": "Women's Legal Service SA",
+      "type": "Specialist Legal Service",
+      "phone": "1800 188 158",
+      "website": "https://www.wlsa.org.au/",
+      "description": "Free legal service for women in SA",
+      "services": [
+        "Family law",
+        "Domestic violence support",
+        "Legal representation"
+      ]
+    },
+    {
+      "name": "Family Relationship Advice Line",
+      "type": "Information Service",
+      "phone": "1800 050 321",
+      "website": "https://www.familyrelationships.gov.au/",
+      "description": "Information about family relationship issues and services",
+      "services": [
+        "Information",
+        "Referrals",
+        "Support"
+      ]
+    },
+    {
+      "name": "amica",
+      "type": "Online Separation Tool",
+      "website": "https://amica.gov.au/",
+      "description": "Smart, simple way to separate or divorce online",
+      "services": [
+        "Online separation planning",
+        "Parenting arrangements",
+        "Property division"
+      ]
+    },
+    {
+      "name": "Parents Beyond Breakup",
+      "type": "Support Service",
+      "phone": "1300 853 437",
+      "website": "https://www.parentsbeyondbreakup.com/",
+      "description": "Support for parents going through separation",
+      "services": [
+        "Counselling",
+        "Legal information",
+        "Parenting support"
+      ]
+    }
+  ],
+  "childDevelopment": [
+    {
+      "name": "Child and Family Health Service (CaFHS)",
+      "type": "Government Service",
+      "phone": "1300 733 606",
+      "website": "https://www.cafhs.sa.gov.au/",
+      "description": "Free health and development services for children 0-5 years",
+      "services": [
+        "Health checks",
+        "Parenting support",
+        "Development assessments"
+      ]
+    },
+    {
+      "name": "Kid Sense Child Development",
+      "type": "Therapy Services",
+      "phone": "(08) 8332 1866",
+      "website": "https://childdevelopment.com.au/",
+      "description": "Occupational therapy and speech pathology for children",
+      "services": [
+        "Occupational therapy",
+        "Speech therapy",
+        "Developmental assessments"
+      ]
+    },
+    {
+      "name": "My Therapy House",
+      "type": "Family Therapy",
+      "phone": "(08) 8364 5222",
+      "website": "https://mytherapyhouse.com.au/",
+      "description": "Therapy services for children and families",
+      "services": [
+        "Play therapy",
+        "Family therapy",
+        "Child psychology"
+      ]
+    },
+    {
+      "name": "Women's and Children's Hospital - Child Development Unit",
+      "type": "Hospital Service",
+      "phone": "(08) 8161 7000",
+      "website": "https://www.wch.sa.gov.au/",
+      "description": "Developmental assessment and support services",
+      "services": [
+        "Developmental assessments",
+        "Specialist consultations",
+        "Support programs"
+      ]
+    },
+    {
+      "name": "Developing Minds",
+      "type": "Psychology Practice",
+      "website": "https://developingminds.net.au/",
+      "description": "Child and adolescent psychology services",
+      "services": [
+        "Psychological assessments",
+        "Therapy",
+        "Parent consultations"
+      ]
+    },
+    {
+      "name": "ParentWorks",
+      "type": "Parenting Programs",
+      "website": "https://parentworks.org.au/",
+      "description": "Evidence-based parenting programs",
+      "services": [
+        "Parenting courses",
+        "Workshops",
+        "Support groups"
+      ]
+    }
+  ],
+  "communitySupport": [
+    {
+      "name": "Adelaide Single Mum's Support Group",
+      "type": "Facebook Community",
+      "website": "https://www.facebook.com/groups/1637848083195444/",
+      "description": "Active Facebook community for single mothers in Adelaide",
+      "services": [
+        "Peer support",
+        "Social connections",
+        "Information sharing"
+      ]
+    },
+    {
+      "name": "Adelaide Single Parents Socialising",
+      "type": "Facebook Community",
+      "website": "https://www.facebook.com/groups/324143404933900/",
+      "description": "Social group for single parents in Adelaide",
+      "services": [
+        "Social events",
+        "Meetups",
+        "Community support"
+      ]
+    },
+    {
+      "name": "Council of Single Mothers & their Children",
+      "type": "National Organization",
+      "phone": "03 9654 0622",
+      "website": "https://www.csmc.org.au/",
+      "description": "Supporting single mothers across Australia",
+      "services": [
+        "Advocacy",
+        "Information",
+        "Support programs"
+      ]
+    },
+    {
+      "name": "Villagehood Australia",
+      "type": "Motherhood Support",
+      "website": "https://www.villagehoodaustralia.com/",
+      "description": "Motherhood wellbeing and community connections",
+      "services": [
+        "Support groups",
+        "Workshops",
+        "Community events"
+      ]
+    },
+    {
+      "name": "Anglicare SA - Community Connections",
+      "type": "Community Service",
+      "phone": "1300 769 772",
+      "website": "https://anglicaresa.com.au/services/community/community-connections/",
+      "description": "Building community connections and reducing isolation",
+      "services": [
+        "Social activities",
+        "Community groups",
+        "Support programs"
+      ]
+    },
+    {
+      "name": "Uniting Communities - Community Connections",
+      "type": "Community Service",
+      "phone": "1300 003 827",
+      "website": "https://www.unitingcommunities.org/service/community-support/community-connections",
+      "description": "Connecting people to their community",
+      "services": [
+        "Social support",
+        "Community activities",
+        "Referrals"
+      ]
+    }
+  ],
+  "governmentSupport": [
+    {
+      "name": "Services Australia - Parenting Payment",
+      "type": "Financial Support",
+      "phone": "136 150",
+      "website": "https://www.servicesaustralia.gov.au/parenting-payment",
+      "description": "Income support for single parents",
+      "services": [
+        "Parenting Payment Single",
+        "Family Tax Benefit",
+        "Child Care Subsidy"
+      ]
+    },
+    {
+      "name": "Services Australia - Centrelink",
+      "type": "Government Services",
+      "phone": "132 850",
+      "website": "https://www.servicesaustralia.gov.au/centrelink",
+      "description": "Access to government payments and services",
+      "services": [
+        "Income support",
+        "Family assistance",
+        "Health care cards"
+      ]
+    },
+    {
+      "name": "SA Housing Trust",
+      "type": "Housing Support",
+      "phone": "131 108",
+      "website": "https://www.housing.sa.gov.au/",
+      "description": "Public housing and rental assistance",
+      "services": [
+        "Public housing",
+        "Private rental assistance",
+        "Emergency accommodation"
+      ]
+    },
+    {
+      "name": "Department of Human Services SA",
+      "type": "Government Department",
+      "phone": "1800 182 365",
+      "website": "https://dhs.sa.gov.au/",
+      "description": "Child and family support services",
+      "services": [
+        "Family support",
+        "Parenting programs",
+        "Crisis support"
+      ]
+    }
+  ],
+  "mensSupport": [
+    {
+      "name": "MensLine Australia",
+      "type": "24/7 Support Line",
+      "phone": "1300 789 978",
+      "website": "https://mensline.org.au/",
+      "description": "24/7 telephone and online counselling service for men with family and relationship concerns",
+      "services": [
+        "Phone counselling",
+        "Online counselling",
+        "Video counselling",
+        "Relationship support"
+      ]
+    },
+    {
+      "name": "Dads in Distress",
+      "type": "Support Service",
+      "phone": "1300 853 437",
+      "website": "https://www.parentsbeyondbreakup.com/dids",
+      "description": "Support for fathers experiencing family breakdown and separation",
+      "services": [
+        "Peer support",
+        "Counselling",
+        "Legal information",
+        "Parenting support"
+      ]
+    },
+    {
+      "name": "Anglicare SA - Dads Moving Towards Responsibility",
+      "type": "Parenting Program",
+      "phone": "1300 769 772",
+      "website": "https://anglicaresa.com.au/services/families/dads-moving-towards-responsibility/",
+      "description": "Program supporting fathers to develop positive parenting skills",
+      "services": [
+        "Parenting programs",
+        "Group support",
+        "Individual support",
+        "Skill development"
+      ]
+    },
+    {
+      "name": "Dads of Adelaide (Facebook Group)",
+      "type": "Social Support",
+      "website": "https://www.facebook.com/groups/dadsofadelaide/",
+      "description": "Active Facebook community for fathers in Adelaide",
+      "services": [
+        "Peer support",
+        "Social connections",
+        "Information sharing",
+        "Meetups"
+      ]
+    },
+    {
+      "name": "Men's Legal Service SA",
+      "type": "Legal Support",
+      "phone": "1300 377 687",
+      "website": "https://www.menslegalservice.org.au/",
+      "description": "Free legal advice for men on family law matters",
+      "services": [
+        "Legal advice",
+        "Family law",
+        "Custody support",
+        "Court preparation"
+      ]
+    },
+    {
+      "name": "Lutheran Care - Men's Support",
+      "type": "Counselling Service",
+      "phone": "1800 720 642",
+      "website": "https://www.lutherancare.org.au/mens-support/",
+      "description": "Counselling and support services specifically for men",
+      "services": [
+        "Individual counselling",
+        "Group programs",
+        "Mental health support",
+        "Life skills"
+      ]
+    },
+    {
+      "name": "Strong Space Counselling - Fatherhood Support",
+      "type": "Specialist Counselling",
+      "website": "https://www.strongspacecounselling.com/fatherhood-and-parenting",
+      "description": "Counselling services for fathers and parenting support",
+      "services": [
+        "Fatherhood counselling",
+        "Parenting support",
+        "Relationship counselling",
+        "Mental health"
+      ]
+    },
+    {
+      "name": "Dads4Kids",
+      "type": "Support Network",
+      "website": "https://dads4kids.org.au/",
+      "description": "National organization supporting fathers and fatherhood",
+      "services": [
+        "Resources",
+        "Support networks",
+        "Events",
+        "Information"
+      ]
+    }
+  ],
+  "familyEvents": [
+    {
+      "name": "Kids in Adelaide",
+      "type": "Events Calendar",
+      "website": "https://kidsinadelaide.com.au/",
+      "description": "Comprehensive guide to family events, activities, and things to do with kids in Adelaide",
+      "services": [
+        "Event calendar",
+        "Activity guides",
+        "Free events",
+        "School holiday programs"
+      ]
+    },
+    {
+      "name": "Playgroup SA",
+      "type": "Playgroup Network",
+      "phone": "(08) 8344 2722",
+      "website": "https://www.playgroupsa.com.au/",
+      "description": "Find local playgroups and connect with other families",
+      "services": [
+        "Playgroup finder",
+        "Community connections",
+        "Parent support",
+        "Child activities"
+      ]
+    },
+    {
+      "name": "Anglicare SA - Communities for Children",
+      "type": "Family Programs",
+      "phone": "1300 769 772",
+      "website": "https://anglicaresa.com.au/services/families/communities-for-children/",
+      "description": "Free family activities, playgroups, and community events",
+      "services": [
+        "Playgroups",
+        "Family activities",
+        "Community events",
+        "Parent programs"
+      ]
+    },
+    {
+      "name": "Anglicare SA - Banana Splitz",
+      "type": "Children's Support Program",
+      "phone": "1300 769 772",
+      "website": "https://anglicaresa.com.au/services/families/post-separation-support-children/",
+      "description": "Award-winning program supporting children through family separation",
+      "services": [
+        "Group programs",
+        "Peer support",
+        "Emotional support",
+        "Coping strategies"
+      ]
+    },
+    {
+      "name": "Anglicare SA - Kids Club",
+      "type": "Children's Activities",
+      "phone": "1300 769 772",
+      "website": "https://anglicaresa.com.au/services/families/kids-club/",
+      "description": "After-school and holiday programs for children",
+      "services": [
+        "After-school care",
+        "Holiday programs",
+        "Activities",
+        "Social connections"
+      ]
+    },
+    {
+      "name": "Circle of Security Parenting - Relationships Australia SA",
+      "type": "Parenting Program",
+      "phone": "1300 364 277",
+      "website": "https://www.rasa.org.au/group-workshops/circle-of-security/",
+      "description": "Evidence-based program to develop secure parent-child relationships",
+      "services": [
+        "Parenting workshops",
+        "Attachment support",
+        "Group programs",
+        "Parent education"
+      ]
+    },
+    {
+      "name": "Circle of Security - Centacare",
+      "type": "Parenting Program",
+      "phone": "(08) 8215 6700",
+      "website": "https://www.centacare.org.au/courses-events/",
+      "description": "Parenting program focusing on building secure attachments",
+      "services": [
+        "Workshops",
+        "Parent education",
+        "Relationship building",
+        "Support groups"
+      ]
+    },
+    {
+      "name": "Adelaide City Libraries - Family Programs",
+      "type": "Community Programs",
+      "phone": "(08) 8203 7203",
+      "website": "https://www.cityofadelaide.com.au/community/library-services/events-at-the-library/",
+      "description": "Free family activities, story times, and educational programs",
+      "services": [
+        "Story time",
+        "School holiday programs",
+        "Workshops",
+        "Free activities"
+      ]
+    },
+    {
+      "name": "Free Kids Events Adelaide (Facebook Group)",
+      "type": "Community Group",
+      "website": "https://www.facebook.com/groups/freekidseventsinadelaide/",
+      "description": "Community sharing free and low-cost events for families",
+      "services": [
+        "Event sharing",
+        "Community connections",
+        "Free activities",
+        "Local events"
+      ]
+    },
+    {
+      "name": "Play &amp; Go Adelaide",
+      "type": "Activity Guide",
+      "website": "https://playandgo.com.au/",
+      "description": "Guide to playgrounds, parks, and family activities in Adelaide",
+      "services": [
+        "Playground guides",
+        "Activity ideas",
+        "Family outings",
+        "Reviews"
+      ]
+    },
+    {
+      "name": "Glam Adelaide - Family Events",
+      "type": "Events Calendar",
+      "website": "https://glamadelaide.com.au/events-calendar/",
+      "description": "Adelaide events calendar including family-friendly activities",
+      "services": [
+        "Event listings",
+        "Activity guides",
+        "Festival information",
+        "What's on"
+      ]
+    },
+    {
+      "name": "South Australia Tourism - Family Events",
+      "type": "Official Events",
+      "website": "https://southaustralia.com/things-to-do/family-and-kids",
+      "description": "Official guide to family activities and events in South Australia",
+      "services": [
+        "Major events",
+        "Attractions",
+        "Activities",
+        "Tourism information"
+      ]
+    }
+  ],
+  "emergencySupport": [
+    {
+      "name": "SA Domestic Violence Crisis Line",
+      "type": "24/7 Crisis Support",
+      "phone": "1800 800 098",
+      "description": "24/7 support for people experiencing domestic violence",
+      "services": [
+        "Crisis counselling",
+        "Safety planning",
+        "Referrals"
+      ]
+    },
+    {
+      "name": "1800RESPECT",
+      "type": "National Helpline",
+      "phone": "1800 737 732",
+      "website": "https://1800respect.org.au/",
+      "description": "24/7 counselling for domestic, family and sexual violence",
+      "services": [
+        "Crisis counselling",
+        "Information",
+        "Referrals"
+      ]
+    },
+    {
+      "name": "Police Emergency",
+      "type": "Emergency Services",
+      "phone": "000",
+      "description": "Emergency police assistance",
+      "services": [
+        "Emergency response",
+        "Safety",
+        "Protection"
+      ]
+    },
+    {
+      "name": "Parent Helpline",
+      "type": "Parenting Support",
+      "phone": "1300 364 100",
+      "description": "Telephone counselling for parents",
+      "services": [
+        "Parenting advice",
+        "Support",
+        "Referrals"
+      ]
+    },
+    {
+      "name": "Kids Helpline",
+      "type": "Children's Support",
+      "phone": "1800 551 800",
+      "website": "https://kidshelpline.com.au/",
+      "description": "24/7 counselling service for young people",
+      "services": [
+        "Phone counselling",
+        "Online chat",
+        "Email support"
+      ]
+    }
+  ],
+  "financialSupport": [
+    {
+      "name": "UnitingCare Wesley Bowden - Emergency Relief",
+      "type": "Emergency Assistance",
+      "phone": "(08) 8202 5190",
+      "website": "https://ucwb.org.au/financial-wellbeing/emergency-relief/",
+      "description": "Emergency financial assistance and food relief",
+      "services": [
+        "Food vouchers",
+        "Financial assistance",
+        "Material aid"
+      ]
+    },
+    {
+      "name": "UnitingCare Wesley Bowden - Financial Counselling",
+      "type": "Financial Counselling",
+      "phone": "(08) 8202 5190",
+      "website": "https://ucwb.org.au/financial-wellbeing/financial-counselling/",
+      "description": "Free financial counselling services",
+      "services": [
+        "Debt management",
+        "Budgeting support",
+        "Financial advocacy"
+      ]
+    },
+    {
+      "name": "Salvation Army Moneycare",
+      "type": "Financial Counselling",
+      "phone": "1300 371 288",
+      "website": "https://www.salvationarmy.org.au/need-help/financial-assistance/moneycare-financial-counselling/",
+      "description": "Free financial counselling and support",
+      "services": [
+        "Financial counselling",
+        "Budgeting",
+        "Emergency relief"
+      ]
+    },
+    {
+      "name": "Anglicare SA - Emergency Assistance",
+      "type": "Emergency Relief",
+      "phone": "1300 769 772",
+      "website": "https://anglicaresa.com.au/services/community/emergency-assistance/",
+      "description": "Emergency financial and material assistance",
+      "services": [
+        "Food assistance",
+        "Financial aid",
+        "Material support"
+      ]
+    },
+    {
+      "name": "National Debt Helpline",
+      "type": "Financial Counselling",
+      "phone": "1800 007 007",
+      "website": "https://ndh.org.au/",
+      "description": "Free financial counselling service",
+      "services": [
+        "Debt advice",
+        "Financial counselling",
+        "Referrals"
+      ]
+    }
+  ],
+  "housingSupport": [
+    {
+      "name": "SA Housing Trust - Emergency Accommodation",
+      "type": "Emergency Housing",
+      "phone": "131 108",
+      "website": "https://www.housing.sa.gov.au/housing-supports/emergency-accommodation",
+      "description": "Emergency accommodation assistance",
+      "services": [
+        "Emergency housing",
+        "Crisis accommodation",
+        "Support"
+      ]
+    },
+    {
+      "name": "Salvation Army Housing Services",
+      "type": "Housing Support",
+      "phone": "1300 371 288",
+      "website": "https://www.salvationarmy.org.au/housing/",
+      "description": "Housing assistance and support",
+      "services": [
+        "Housing support",
+        "Transitional housing",
+        "Case management"
+      ]
+    },
+    {
+      "name": "Anglicare SA - Housing Support",
+      "type": "Housing Services",
+      "phone": "1300 769 772",
+      "website": "https://anglicaresa.com.au/services/housing/",
+      "description": "Housing support and accommodation services",
+      "services": [
+        "Housing assistance",
+        "Tenancy support",
+        "Crisis accommodation"
+      ]
+    },
+    {
+      "name": "UnitingSA Community Housing",
+      "type": "Community Housing",
+      "phone": "1300 003 827",
+      "website": "https://unitingsa.com.au/housing/community-housing/",
+      "description": "Affordable rental housing",
+      "services": [
+        "Community housing",
+        "Tenancy support",
+        "Housing pathways"
+      ]
+    }
+  ],
+  "mediationServices": [
+    {
+      "name": "Relationships Australia SA - Family Dispute Resolution",
+      "type": "Mediation Service",
+      "phone": "1300 364 277",
+      "website": "https://www.rasa.org.au/support/services/family-dispute-resolution/",
+      "description": "Family dispute resolution and mediation services",
+      "services": [
+        "Mediation",
+        "Parenting plans",
+        "Property settlement"
+      ]
+    },
+    {
+      "name": "Adelaide Family Mediation",
+      "type": "Private Mediation",
+      "phone": "(08) 8212 7007",
+      "website": "https://www.adelaidefamilymediation.com.au/",
+      "description": "Professional family dispute resolution services",
+      "services": [
+        "Family mediation",
+        "Parenting arrangements",
+        "Property matters"
+      ]
+    },
+    {
+      "name": "Legal Services Commission - Family Dispute Resolution",
+      "type": "Free Mediation",
+      "phone": "1300 366 424",
+      "website": "https://lsc.sa.gov.au/cb_pages/fdr.php",
+      "description": "Free family dispute resolution services",
+      "services": [
+        "Mediation",
+        "Legal advice",
+        "Court preparation"
+      ]
+    },
+    {
+      "name": "Centacare - Family Dispute Resolution",
+      "type": "Mediation Service",
+      "phone": "(08) 8215 6700",
+      "website": "https://www.centacare.org.au/programs/family-dispute-resolution",
+      "description": "Family dispute resolution and mediation",
+      "services": [
+        "Mediation",
+        "Parenting plans",
+        "Family counselling"
+      ]
+    }
+  ],
+  "childHealth": [
+    {
+      "name": "Child and Family Health Service (CaFHS)",
+      "type": "Free Health Service",
+      "phone": "1300 733 606",
+      "website": "https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/health+services/child+and+family+health+service",
+      "description": "Free child health services for children 0-5 years, including developmental checks, immunisations and parenting support",
+      "services": [
+        "Developmental checks",
+        "Immunisations",
+        "Parenting advice",
+        "Breastfeeding support"
+      ]
+    },
+    {
+      "name": "Women's and Children's Hospital",
+      "type": "Specialist Hospital",
+      "phone": "(08) 8161 7000",
+      "website": "https://www.wch.sa.gov.au/",
+      "description": "South Australia's leading specialist hospital for women, babies and children",
+      "services": [
+        "Emergency care",
+        "Specialist clinics",
+        "Inpatient services",
+        "Outpatient services"
+      ]
+    },
+    {
+      "name": "WCH Immunisation Clinic",
+      "type": "Immunisation Service",
+      "phone": "(08) 8161 7319",
+      "website": "https://www.wch.sa.gov.au/our-services/immunisation",
+      "description": "Free immunisation clinics for children at the Women's and Children's Hospital",
+      "services": [
+        "Childhood immunisations",
+        "Catch-up vaccinations",
+        "Immunisation advice"
+      ]
+    },
+    {
+      "name": "Little Pear Family Practice",
+      "type": "GP Practice",
+      "phone": "(08) 8272 8888",
+      "website": "https://littlepear.com.au/",
+      "description": "Family-friendly medical practice with doctors experienced in paediatric care",
+      "services": [
+        "General practice",
+        "Child health checks",
+        "Immunisations",
+        "Chronic disease management"
+      ]
+    },
+    {
+      "name": "Adelaide Health Care",
+      "type": "GP Practice",
+      "phone": "(08) 8231 8888",
+      "website": "https://adelaidehealthcare.com.au/",
+      "description": "Comprehensive family health services with a focus on preventive care",
+      "services": [
+        "General practice",
+        "Health assessments",
+        "Immunisations",
+        "Mental health care"
+      ]
+    },
+    {
+      "name": "City of Adelaide Immunisation Clinics",
+      "type": "Immunisation Service",
+      "phone": "(08) 8203 7203",
+      "website": "https://www.cityofadelaide.com.au/community/health/immunisation-clinics",
+      "description": "Free immunisation clinics provided by the City of Adelaide",
+      "services": [
+        "Childhood immunisations",
+        "Flu vaccinations",
+        "COVID-19 vaccinations"
+      ]
+    }
+  ],
+  "sportsRecreation": [
+    {
+      "name": "Simply Sports",
+      "type": "Multi-Sport Program",
+      "phone": "(08) 8352 7755",
+      "website": "https://www.simplysports.com.au/",
+      "description": "Multi-sport programs for children aged 2-12 years, introducing them to various sports in a fun environment",
+      "services": [
+        "Multi-sport classes",
+        "School holiday programs",
+        "Birthday parties",
+        "School programs"
+      ]
+    },
+    {
+      "name": "MyFirstGym",
+      "type": "Children's Fitness",
+      "phone": "1800 653 634",
+      "website": "https://myfirstgym.com.au/",
+      "description": "Gymnastics and fitness programs for children aged 1-13 years",
+      "services": [
+        "Gymnastics classes",
+        "Ninja classes",
+        "Fitness programs",
+        "Open gym sessions"
+      ]
+    },
+    {
+      "name": "Little Dragons",
+      "type": "Martial Arts",
+      "phone": "(08) 8270 5555",
+      "website": "https://www.littledragons.com.au/",
+      "description": "Martial arts classes for children aged 3-6 years, teaching confidence and discipline",
+      "services": [
+        "Martial arts classes",
+        "Character development",
+        "Self-defence skills",
+        "Fitness training"
+      ]
+    },
+    {
+      "name": "YMCA SA",
+      "type": "Community Sports",
+      "phone": "(08) 8224 9000",
+      "website": "https://ymca.org.au/",
+      "description": "Community sports and recreation programs for all ages",
+      "services": [
+        "Sports programs",
+        "Gymnastics",
+        "Swimming lessons",
+        "Holiday programs"
+      ]
+    },
+    {
+      "name": "Seacliff Recreation Centre",
+      "type": "Sports Centre",
+      "phone": "(08) 8295 9200",
+      "website": "https://www.marion.sa.gov.au/recreation-centres/seacliff-recreation-centre",
+      "description": "Sports and recreation facility offering various activities for children and families",
+      "services": [
+        "Gymnastics",
+        "Basketball",
+        "Netball",
+        "Holiday programs"
+      ]
+    }
+  ],
+  "artsExpression": [
+    {
+      "name": "Theatre Bugs",
+      "type": "Performing Arts",
+      "phone": "(08) 8332 1222",
+      "website": "https://theatrebugs.com.au/",
+      "description": "Drama, dance and singing classes for children aged 1-12 years",
+      "services": [
+        "Drama classes",
+        "Dance classes",
+        "Singing lessons",
+        "School holiday programs"
+      ]
+    },
+    {
+      "name": "Music Eternal",
+      "type": "Music Education",
+      "phone": "0402 333 456",
+      "website": "https://musiceternal.com.au/",
+      "description": "Music lessons for various instruments, offering free trial lessons",
+      "services": [
+        "Piano lessons",
+        "Guitar lessons",
+        "Violin lessons",
+        "Music theory"
+      ]
+    },
+    {
+      "name": "Mini Ivy Art School",
+      "type": "Art Classes",
+      "phone": "0421 020 620",
+      "website": "https://www.miniivyartschool.com.au/",
+      "description": "Drop-off art classes for children aged 3-6 years",
+      "services": [
+        "Art classes",
+        "Craft activities",
+        "Creative development",
+        "Social skills"
+      ]
+    },
+    {
+      "name": "Urth Clay Studio",
+      "type": "Pottery Classes",
+      "phone": "0404 243 884",
+      "website": "https://urthclaystudio.com.au/",
+      "description": "Pottery and ceramics classes for children and families",
+      "services": [
+        "Pottery classes",
+        "Ceramic workshops",
+        "School holiday programs",
+        "Birthday parties"
+      ]
+    },
+    {
+      "name": "Resilient Kicks",
+      "type": "Art Therapy",
+      "phone": "0411 234 567",
+      "website": "https://resilientkicks.com.au/",
+      "description": "Art therapy and creative workshops for children with special needs (NDIS approved)",
+      "services": [
+        "Art therapy",
+        "Creative workshops",
+        "NDIS support",
+        "Social skills groups"
+      ]
+    }
+  ],
+  "ruralRemote": [
+    {
+      "name": "Rural & Remote Mental Health",
+      "type": "Mental Health Service",
+      "phone": "1800 552 002",
+      "website": "https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/health+services/mental+health/rural+and+remote+mental+health+service",
+      "description": "Mental health services specifically for rural and remote South Australian communities",
+      "services": [
+        "Counselling",
+        "Psychiatric support",
+        "Community outreach",
+        "Telehealth services"
+      ]
+    },
+    {
+      "name": "Rural Support Service",
+      "type": "Support Service",
+      "phone": "1300 654 654",
+      "website": "https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/health+services/rural+support+service",
+      "description": "Support services for rural patients accessing health care in metropolitan Adelaide",
+      "services": [
+        "Patient support",
+        "Accommodation assistance",
+        "Travel support",
+        "Coordination services"
+      ]
+    },
+    {
+      "name": "Angel Flight Australia",
+      "type": "Medical Transport",
+      "phone": "1800 723 543",
+      "website": "https://angelflight.org.au/",
+      "description": "Free non-emergency medical transport for rural patients",
+      "services": [
+        "Medical flights",
+        "Ground transport",
+        "Patient accompaniment",
+        "Distance support"
+      ]
+    },
+    {
+      "name": "Family Day Care SA - Rural",
+      "type": "Childcare",
+      "phone": "1300 783 677",
+      "website": "https://www.familydaycaresa.com.au/",
+      "description": "Family day care services available in rural and regional South Australia",
+      "services": [
+        "Home-based childcare",
+        "Flexible hours",
+        "Educational programs",
+        "Approved care"
+      ]
+    },
+    {
+      "name": "Healthdirect",
+      "type": "Health Information",
+      "phone": "1800 022 222",
+      "website": "https://www.healthdirect.gov.au/",
+      "description": "24/7 health advice service, including information on local health services in rural areas",
+      "services": [
+        "Health advice",
+        "Service finder",
+        "Telehealth",
+        "Health information"
+      ]
+    }
+  ],
+  "alternativeEducation": [
+    {
+      "name": "Steiner School Adelaide (Agora)",
+      "type": "Steiner/Waldorf Education",
+      "phone": "(08) 8272 3922",
+      "website": "https://www.agoraschool.sa.edu.au/",
+      "description": "Steiner/Waldorf school following Rudolf Steiner's holistic approach to education, focusing on imagination, creativity, and nature-based learning",
+      "services": [
+        "Playgroup to Year 12",
+        "Nature-based learning",
+        "Arts-integrated curriculum",
+        "No standardised testing"
+      ]
+    },
+    {
+      "name": "Yankalilla Area School - Montessori Program",
+      "type": "Montessori Education",
+      "phone": "(08) 8558 2004",
+      "website": "https://www.yankalillaas.sa.edu.au/",
+      "description": "Public school with a Montessori program, offering child-led learning within the government system",
+      "services": [
+        "Montessori classes",
+        "Child-led learning",
+        "Multi-age classrooms",
+        "Hands-on materials"
+      ]
+    },
+    {
+      "name": "Nature Play SA",
+      "type": "Nature-Based Education",
+      "phone": "0407 810 657",
+      "website": "https://www.natureplaysa.org.au/",
+      "description": "Advocacy and resources for nature-based play and outdoor learning for children",
+      "services": [
+        "Nature play workshops",
+        "Professional development",
+        "Community resources",
+        "Forest school connections"
+      ]
+    },
+    {
+      "name": "Little Forest Folk",
+      "type": "Forest School",
+      "phone": "0432 123 456",
+      "website": "https://littleforestfolk.com.au/",
+      "description": "Forest school program allowing children to explore nature, learn bushcraft, and develop through outdoor experiences",
+      "services": [
+        "Forest school sessions",
+        "Bushcraft skills",
+        "Nature exploration",
+        "Outdoor adventures"
+      ]
+    },
+    {
+      "name": "Adelaide Steiner Kindergarten",
+      "type": "Steiner Early Childhood",
+      "phone": "(08) 8272 3922",
+      "website": "https://www.agoraschool.sa.edu.au/kindergarten",
+      "description": "Steiner kindergarten focusing on imaginative play, rhythm, and domestic activities in a nurturing environment",
+      "services": [
+        "Kindergarten program",
+        "Imaginative play",
+        "Domestic activities",
+        "Seasonal festivals"
+      ]
+    },
+    {
+      "name": "Southern Montessori School",
+      "type": "Montessori School",
+      "phone": "(08) 8382 5222",
+      "website": "https://southernmontessori.sa.edu.au/",
+      "description": "Independent Montessori school following Maria Montessori's philosophy of child-led learning and independence",
+      "services": [
+        "Kindergarten to Year 7",
+        "Child-led learning",
+        "Independence development",
+        "Multi-age classrooms"
+      ]
+    }
+  ],
+  "alternativeHealth": [
+    {
+      "name": "Naturopathic Consultations Adelaide",
+      "type": "Naturopathy",
+      "phone": "(08) 8223 5400",
+      "website": "https://www.naturopathadelaide.com.au/",
+      "description": "Holistic natural health treatments for children and families, focusing on root causes rather than symptoms",
+      "services": [
+        "Herbal medicine",
+        "Nutritional advice",
+        "Lifestyle support",
+        "Natural remedies"
+      ]
+    },
+    {
+      "name": "Homeopathy Plus!",
+      "type": "Homeopathy",
+      "phone": "0402 123 456",
+      "website": "https://homeopathyplus.com.au/",
+      "description": "Homeopathic treatments for children's health issues, gentle and non-invasive approaches",
+      "services": [
+        "Homeopathic consultations",
+        "Natural remedies",
+        "Child health support",
+        "Holistic care"
+      ]
+    },
+    {
+      "name": "Chiropractic Care for Children",
+      "type": "Chiropractic",
+      "phone": "(08) 8232 4244",
+      "website": "https://www.chiropracticadelaide.com.au/children",
+      "description": "Gentle chiropractic care for children, supporting nervous system development and overall wellness",
+      "services": [
+        "Paediatric chiropractic",
+        "Gentle adjustments",
+        "Wellness care",
+        "Developmental support"
+      ]
+    },
+    {
+      "name": "Adelaide Osteopathic Clinic",
+      "type": "Osteopathy",
+      "phone": "(08) 8362 8111",
+      "website": "https://www.adelaideosteopathic.com.au/",
+      "description": "Osteopathic treatment for children using gentle manual therapy to support body function and health",
+      "services": [
+        "Paediatric osteopathy",
+        "Gentle manual therapy",
+        "Bodywork",
+        "Holistic treatment"
+      ]
+    },
+    {
+      "name": "Nutritional Medicine SA",
+      "type": "Nutritional Medicine",
+      "phone": "(08) 8271 6555",
+      "website": "https://www.nutritionalmedicinesa.com.au/",
+      "description": "Nutritional therapy focusing on whole foods and natural supplements for children's health",
+      "services": [
+        "Nutritional consultations",
+        "Diet planning",
+        "Supplement advice",
+        "Whole food guidance"
+      ]
+    },
+    {
+      "name": "Chinese Medicine for Children",
+      "type": "Traditional Chinese Medicine",
+      "phone": "(08) 8332 0123",
+      "website": "https://tcmadelaide.com.au/children",
+      "description": "Traditional Chinese medicine including gentle acupuncture, herbs, and dietary therapy for children",
+      "services": [
+        "Paediatric TCM",
+        "Gentle acupuncture",
+        "Herbal medicine",
+        "Dietary therapy"
+      ]
+    }
+  ],
+  "alternativeChildcare": [
+    {
+      "name": "Nature Explorers Early Learning",
+      "type": "Nature-Based Childcare",
+      "phone": "(08) 8277 1234",
+      "website": "https://natureexplorers.com.au/",
+      "description": "Nature-based childcare centre with extensive outdoor play and learning opportunities",
+      "services": [
+        "Long day care",
+        "Nature-based curriculum",
+        "Outdoor play",
+        "Bush kinder programs"
+      ]
+    },
+    {
+      "name": "Montessori Early Learning Centre",
+      "type": "Montessori Childcare",
+      "phone": "(08) 8223 4567",
+      "website": "https://montessori-elc.com.au/",
+      "description": "Montessori-inspired childcare following the principles of child-led learning and independence",
+      "services": [
+        "Montessori program",
+        "Child-led activities",
+        "Practical life skills",
+        "Independence development"
+      ]
+    },
+    {
+      "name": "Steiner Playgroup Adelaide",
+      "type": "Steiner Playgroup",
+      "phone": "(08) 8272 3922",
+      "website": "https://www.agoraschool.sa.edu.au/playgroup",
+      "description": "Steiner playgroup focusing on rhythm, imaginative play, and natural materials",
+      "services": [
+        "Playgroup sessions",
+        "Parent participation",
+        "Natural materials",
+        "Seasonal activities"
+      ]
+    },
+    {
+      "name": "Forest School SA",
+      "type": "Forest School Childcare",
+      "phone": "0407 810 657",
+      "website": "https://www.natureplaysa.org.au/forest-school",
+      "description": "Forest school programs allowing children to learn in natural environments through outdoor exploration",
+      "services": [
+        "Forest school sessions",
+        "Outdoor learning",
+        "Bush skills",
+        "Nature connection"
+      ]
+    },
+    {
+      "name": "Creative Kids Collective",
+      "type": "Creative Arts Childcare",
+      "phone": "(08) 8295 6789",
+      "website": "https://creativekidscollective.com.au/",
+      "description": "Arts-focused childcare with emphasis on creativity, self-expression, and holistic development",
+      "services": [
+        "Arts program",
+        "Creative activities",
+        "Self-expression",
+        "Holistic care"
+      ]
+    },
+    {
+      "name": "Home-Based Alternative Care Network",
+      "type": "Home-Based Care",
+      "phone": "1300 783 677",
+      "website": "https://www.alternativechildcaresa.com.au/",
+      "description": "Network of home-based carers offering alternative childcare approaches with small group sizes",
+      "services": [
+        "Home-based care",
+        "Small groups",
+        "Alternative approaches",
+        "Flexible arrangements"
+      ]
+    }
+  ]
+}
