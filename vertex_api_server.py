@@ -21,9 +21,10 @@ _client = None
 def get_client():
     global _client
     if _client is None:
-        api_key = os.environ.get('GOOGLE_API_KEY')
+        # Support both GEMINI_API_KEY and GOOGLE_API_KEY env var names
+        api_key = os.environ.get('GEMINI_API_KEY') or os.environ.get('GOOGLE_API_KEY')
         if not api_key:
-            raise RuntimeError("GOOGLE_API_KEY environment variable is not set")
+            raise RuntimeError("No API key found. Set GEMINI_API_KEY or GOOGLE_API_KEY environment variable.")
         _client = genai.Client(api_key=api_key)
         print("✓ Gemini AI client initialized")
     return _client
@@ -116,9 +117,9 @@ Please provide a helpful, personal, and empathetic response."""
             max_output_tokens=2048
         )
 
-        # Add Google Search grounding tool if needed
-        if needs_search:
-            config.tools = [types.Tool(google_search=types.GoogleSearch())]
+        # Note: Google Search grounding requires Vertex AI credentials.
+        # With a Gemini API key, we skip grounding and rely on the model's knowledge.
+        # needs_search is kept for future use when Vertex AI is configured.
 
         client = get_client()
         response = client.models.generate_content(
@@ -142,7 +143,7 @@ Please provide a helpful, personal, and empathetic response."""
 # ─── Health check ─────────────────────────────────────────────────────────────
 @app.route('/api/health', methods=['GET'])
 def health_check():
-    api_key_set = bool(os.environ.get('GOOGLE_API_KEY'))
+    api_key_set = bool(os.environ.get('GEMINI_API_KEY') or os.environ.get('GOOGLE_API_KEY'))
     return jsonify({
         'status': 'ok',
         'api_key_configured': api_key_set,
