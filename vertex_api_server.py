@@ -36,7 +36,8 @@ def get_model_name():
     """Get the full Vertex resource path for the model."""
     project = os.environ.get("GOOGLE_CLOUD_PROJECT")
     location = os.environ.get("GOOGLE_CLOUD_LOCATION")
-    return f"projects/{project}/locations/{location}/publishers/google/models/gemini-1.5-flash"
+    # Force the specific stable version for the Adelaide region
+    return f"projects/{project}/locations/{location}/publishers/google/models/gemini-1.5-flash-002"
 
 
 # ─── Static file serving ──────────────────────────────────────────────────────
