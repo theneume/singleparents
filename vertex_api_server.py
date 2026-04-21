@@ -21,31 +21,13 @@ _client = None
 def get_client():
     global _client
     if _client is None:
-        use_vertex = os.environ.get('GOOGLE_GENAI_USE_VERTEXAI', '').lower() == 'true'
-
-        if use_vertex:
-            # ── Vertex AI mode (Render production with your Google Cloud project) ──
-            project  = os.environ.get('GOOGLE_CLOUD_PROJECT')
-            location = os.environ.get('GOOGLE_CLOUD_LOCATION', 'us-central1')
-            if not project:
-                raise RuntimeError("GOOGLE_CLOUD_PROJECT must be set when GOOGLE_GENAI_USE_VERTEXAI=true")
-            _client = genai.Client(
-                vertexai=True,
-                project=project,
-                location=location
-            )
-            print(f"✓ Gemini client initialized in VERTEX AI mode (project={project}, location={location})")
-        else:
-            # ── API key mode (default / local sandbox) ──
-            api_key = os.environ.get('GOOGLE_API_KEY') or os.environ.get('GEMINI_API_KEY')
-            if not api_key:
-                raise RuntimeError(
-                    "No credentials found. Set GOOGLE_API_KEY (API key mode) "
-                    "or GOOGLE_GENAI_USE_VERTEXAI=true + GOOGLE_CLOUD_PROJECT (Vertex mode)."
-                )
-            _client = genai.Client(api_key=api_key)
-            print("✓ Gemini client initialized in API KEY mode")
-
+        _client = genai.Client(
+            api_key=os.environ.get("GOOGLE_API_KEY"),
+            project=os.environ.get("GOOGLE_CLOUD_PROJECT"),
+            location=os.environ.get("GOOGLE_CLOUD_LOCATION"),
+            vertexai=os.environ.get("GOOGLE_GENAI_USE_VERTEXAI") == 'true'
+        )
+        print(f"✓ Gemini client initialized (vertexai={os.environ.get('GOOGLE_GENAI_USE_VERTEXAI') == 'true'})")
     return _client
 
 
