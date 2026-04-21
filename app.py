@@ -21,14 +21,21 @@ _client = None
 def get_client():
     global _client
     if _client is None:
+        # This setup allows the Cloud API Key to access Vertex features
+        # without needing a Service Account file.
         _client = genai.Client(
             api_key=os.environ.get("GOOGLE_API_KEY"),
-            project=os.environ.get("GOOGLE_CLOUD_PROJECT"),
-            location=os.environ.get("GOOGLE_CLOUD_LOCATION"),
-            vertexai=os.environ.get("GOOGLE_GENAI_USE_VERTEXAI") == 'true'
+            http_options=types.HttpOptions(api_version="v1")
         )
-        print(f"✓ Gemini client initialized (vertexai={os.environ.get('GOOGLE_GENAI_USE_VERTEXAI') == 'true'})")
+        print(f"✓ Gemini client initialized with Cloud API Key + Vertex v1 API")
     return _client
+
+
+def get_model_name():
+    # Use the full Vertex resource path for the model
+    project = os.environ.get("GOOGLE_CLOUD_PROJECT")
+    location = os.environ.get("GOOGLE_CLOUD_LOCATION")
+    return f"projects/{project}/locations/{location}/publishers/google/models/gemini-1.5-flash"
 
 
 # ─── Static file serving ──────────────────────────────────────────────────────
@@ -124,10 +131,8 @@ Please provide a helpful, personal, and empathetic response."""
             config.tools = [types.Tool(google_search=types.GoogleSearch())]
 
         client = get_client()
-        use_vertex_mode = os.environ.get('GOOGLE_GENAI_USE_VERTEXAI', '').lower() == 'true'
-        model_name = "gemini-1.5-flash" if use_vertex_mode else "gemini-2.0-flash"
         response = client.models.generate_content(
-            model=model_name,
+            model=get_model_name(),
             contents=context,
             config=config
         )
