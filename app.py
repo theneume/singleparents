@@ -15,24 +15,25 @@ from datetime import datetime
 app = Flask(__name__, static_folder='.')
 CORS(app)
 
-# ─── Client initialised lazily so Render can start without crashing ───────────
+# ─── Lazy client init ────────────────────────────────────────────────────────
 _client = None
 
 def get_client():
+    """Get or create the Gemini client."""
     global _client
     if _client is None:
-        # This setup allows the Cloud API Key to access Vertex features
-        # without needing a Service Account file.
+        # DO NOT use vertexai=True here; it will look for a Service Account file.
+        # Using http_options allows the API Key to authenticate with Vertex.
         _client = genai.Client(
             api_key=os.environ.get("GOOGLE_API_KEY"),
             http_options=types.HttpOptions(api_version="v1")
         )
-        print(f"✓ Gemini client initialized with Cloud API Key + Vertex v1 API")
+        print("✓ Gemini client initialized with Cloud API Key + Vertex v1 API")
     return _client
 
 
 def get_model_name():
-    # Use the full Vertex resource path for the model
+    """Get the full Vertex resource path for the model."""
     project = os.environ.get("GOOGLE_CLOUD_PROJECT")
     location = os.environ.get("GOOGLE_CLOUD_LOCATION")
     return f"projects/{project}/locations/{location}/publishers/google/models/gemini-1.5-flash"
@@ -51,7 +52,7 @@ def serve_static(path):
 # ─── Chat endpoint ────────────────────────────────────────────────────────────
 @app.route('/api/vertex-chat', methods=['POST'])
 def vertex_chat():
-    """Handle chat requests with Gemini AI and optional Google Search grounding"""
+    """Handle chat requests with Gemini AI"""
     try:
         data = request.json
         user_message = data.get('message', '')
@@ -98,7 +99,7 @@ YOUR PERSONALITY:
 - Reference previous messages to show you're listening and remembering
 - Provide specific contact information (phone numbers, websites) from the knowledge base
 - Include clickable links in your response when mentioning websites
-- For event queries, use Google Search to find CURRENT, SPECIFIC events with times and locations
+- For event queries, help users find CURRENT, SPECIFIC events with times and locations
 - Always acknowledge the current date ({current_date}) when discussing events or time-sensitive topics
 - Format your response with clear sections and bullet points where appropriate
 - Be conversational, warm, and personal - avoid generic phrases like "Hello there"
@@ -109,37 +110,19 @@ CURRENT USER MESSAGE: {user_message}
 
 Please provide a helpful, personal, and empathetic response."""
 
-        # Detect if we need Google Search (for events/current info)
-        needs_search = any(keyword in user_message.lower() for keyword in [
-            'event', 'happening', 'this weekend', 'today', 'tomorrow', 'next week',
-            'activities', "what's on", 'current', 'latest', 'recent', 'now',
-            'schedule', 'upcoming', 'calendar', 'when', 'where can i',
-            'things to do', 'places to go', 'fun'
-        ])
-
-        # Build generation config
-        config = types.GenerateContentConfig(
-            temperature=0.8,
-            top_k=40,
-            top_p=0.95,
-            max_output_tokens=2048
-        )
-
-        # Google Search grounding works in Vertex AI mode only
-        use_vertex = os.environ.get('GOOGLE_GENAI_USE_VERTEXAI', '').lower() == 'true'
-        if needs_search and use_vertex:
-            config.tools = [types.Tool(google_search=types.GoogleSearch())]
-
+        # Get client and model
         client = get_client()
+        model_id = get_model_name()
+
+        # Generate response
         response = client.models.generate_content(
-            model=get_model_name(),
-            contents=context,
-            config=config
+            model=model_id,
+            contents=context
         )
 
         return jsonify({
             'response': response.text,
-            'has_grounding': needs_search
+            'has_grounding': False
         })
 
     except Exception as e:
@@ -152,17 +135,14 @@ Please provide a helpful, personal, and empathetic response."""
 # ─── Health check ─────────────────────────────────────────────────────────────
 @app.route('/api/health', methods=['GET'])
 def health_check():
-    use_vertex = os.environ.get('GOOGLE_GENAI_USE_VERTEXAI', '').lower() == 'true'
-    api_key_set = bool(
-        os.environ.get('GOOGLE_API_KEY') or
-        os.environ.get('GEMINI_API_KEY') or
-        (use_vertex and os.environ.get('GOOGLE_CLOUD_PROJECT'))
-    )
-    mode = 'vertex_ai' if use_vertex else 'api_key'
+    api_key_set = bool(os.environ.get('GOOGLE_API_KEY'))
+    project_set = bool(os.environ.get('GOOGLE_CLOUD_PROJECT'))
+    location_set = bool(os.environ.get('GOOGLE_CLOUD_LOCATION'))
     return jsonify({
         'status': 'ok',
         'api_key_configured': api_key_set,
-        'mode': mode,
+        'project_configured': project_set,
+        'location_configured': location_set,
         'timestamp': datetime.now().isoformat()
     })
 
