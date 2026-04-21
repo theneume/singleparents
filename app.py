@@ -21,12 +21,31 @@ _client = None
 def get_client():
     global _client
     if _client is None:
-        # Support both GEMINI_API_KEY and GOOGLE_API_KEY env var names
-        api_key = os.environ.get('GEMINI_API_KEY') or os.environ.get('GOOGLE_API_KEY')
-        if not api_key:
-            raise RuntimeError("No API key found. Set GEMINI_API_KEY or GOOGLE_API_KEY environment variable.")
-        _client = genai.Client(api_key=api_key)
-        print("✓ Gemini AI client initialized")
+        use_vertex = os.environ.get('GOOGLE_GENAI_USE_VERTEXAI', '').lower() == 'true'
+
+        if use_vertex:
+            # ── Vertex AI mode (Render production with your Google Cloud project) ──
+            project  = os.environ.get('GOOGLE_CLOUD_PROJECT')
+            location = os.environ.get('GOOGLE_CLOUD_LOCATION', 'us-central1')
+            if not project:
+                raise RuntimeError("GOOGLE_CLOUD_PROJECT must be set when GOOGLE_GENAI_USE_VERTEXAI=true")
+            _client = genai.Client(
+                vertexai=True,
+                project=project,
+                location=location
+            )
+            print(f"✓ Gemini client initialized in VERTEX AI mode (project={project}, location={location})")
+        else:
+            # ── API key mode (default / local sandbox) ──
+            api_key = os.environ.get('GOOGLE_API_KEY') or os.environ.get('GEMINI_API_KEY')
+            if not api_key:
+                raise RuntimeError(
+                    "No credentials found. Set GOOGLE_API_KEY (API key mode) "
+                    "or GOOGLE_GENAI_USE_VERTEXAI=true + GOOGLE_CLOUD_PROJECT (Vertex mode)."
+                )
+            _client = genai.Client(api_key=api_key)
+            print("✓ Gemini client initialized in API KEY mode")
+
     return _client
 
 
@@ -117,13 +136,16 @@ Please provide a helpful, personal, and empathetic response."""
             max_output_tokens=2048
         )
 
-        # Note: Google Search grounding requires Vertex AI credentials.
-        # With a Gemini API key, we skip grounding and rely on the model's knowledge.
-        # needs_search is kept for future use when Vertex AI is configured.
+        # Google Search grounding works in Vertex AI mode only
+        use_vertex = os.environ.get('GOOGLE_GENAI_USE_VERTEXAI', '').lower() == 'true'
+        if needs_search and use_vertex:
+            config.tools = [types.Tool(google_search=types.GoogleSearch())]
 
         client = get_client()
+        use_vertex_mode = os.environ.get('GOOGLE_GENAI_USE_VERTEXAI', '').lower() == 'true'
+        model_name = "gemini-1.5-flash" if use_vertex_mode else "gemini-2.0-flash"
         response = client.models.generate_content(
-            model="gemini-2.0-flash",
+            model=model_name,
             contents=context,
             config=config
         )
@@ -143,10 +165,17 @@ Please provide a helpful, personal, and empathetic response."""
 # ─── Health check ─────────────────────────────────────────────────────────────
 @app.route('/api/health', methods=['GET'])
 def health_check():
-    api_key_set = bool(os.environ.get('GEMINI_API_KEY') or os.environ.get('GOOGLE_API_KEY'))
+    use_vertex = os.environ.get('GOOGLE_GENAI_USE_VERTEXAI', '').lower() == 'true'
+    api_key_set = bool(
+        os.environ.get('GOOGLE_API_KEY') or
+        os.environ.get('GEMINI_API_KEY') or
+        (use_vertex and os.environ.get('GOOGLE_CLOUD_PROJECT'))
+    )
+    mode = 'vertex_ai' if use_vertex else 'api_key'
     return jsonify({
         'status': 'ok',
         'api_key_configured': api_key_set,
+        'mode': mode,
         'timestamp': datetime.now().isoformat()
     })
 
