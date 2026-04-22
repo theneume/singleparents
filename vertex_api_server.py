@@ -16,25 +16,40 @@ app = Flask(__name__, static_folder='.')
 CORS(app)
 
 # ─── Lazy client init ────────────────────────────────────────────────────────
+# ─── FORCED CLEAN INITIALIZATION ─────────────────────────────────────────────
+# This ignores all legacy regional 404 models
 _client = None
+_model_id = None
 
-def get_client():
-    """Get or create the Gemini client."""
-    global _client
+def initialize_vertex_client():
+    global _client, _model_id
     if _client is None:
-        # Use 'global' location to avoid 404 errors in australia-southeast1
+        project_id = os.getenv("GOOGLE_CLOUD_PROJECT", "single-parents-adelaide")
+        location_id = os.getenv("GOOGLE_CLOUD_LOCATION", "global")
+
+        # We strictly use the 2.5 stable model for the 2026 grid
+        _model_id = "gemini-2.5-flash"
+
         _client = genai.Client(
             vertexai=True,
-            project='single-parents-adelaide',
-            location='global'
+            project=project_id,
+            location=location_id
         )
-        print("✓ Gemini client initialized with Vertex AI (global endpoint)")
-    return _client
+
+        print(f"✓ Grid Clear: {project_id} | {location_id} | {_model_id}")
+    return _client, _model_id
+
+
+def get_client():
+    """Get the Gemini client."""
+    client, _ = initialize_vertex_client()
+    return client
 
 
 def get_model_name():
-    """Get the model name - 2026 stable workhorse."""
-    return "gemini-2.5-flash"
+    """Get the model ID."""
+    _, model_id = initialize_vertex_client()
+    return model_id
 
 
 # ─── Static file serving ──────────────────────────────────────────────────────
