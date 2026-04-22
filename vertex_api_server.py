@@ -127,15 +127,23 @@ Please provide a helpful, personal, and empathetic response."""
         client = get_client()
         model_id = get_model_name()
 
-        # Generate response
+        # This is the 'Master Key' for real-time Adelaide data
+        search_tool = types.Tool(
+            google_search=types.GoogleSearch()
+        )
+
+        # Generate response with Google Search grounding
         response = client.models.generate_content(
             model=model_id,
-            contents=context
+            contents=context,
+            config=types.GenerateContentConfig(
+                tools=[search_tool]  # THIS triggers the live search
+            )
         )
 
         return jsonify({
             'response': response.text,
-            'has_grounding': False
+            'has_grounding': True
         })
 
     except Exception as e:
