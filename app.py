@@ -22,21 +22,18 @@ def get_client():
     """Get or create the Gemini client."""
     global _client
     if _client is None:
-        # Confirming environment integrity
-        project_id = os.environ.get("GOOGLE_CLOUD_PROJECT", "single-parents-adelaide")
-        location_id = os.environ.get("GOOGLE_CLOUD_LOCATION", "australia-southeast1")
-
+        # Use 'global' location to avoid 404 errors in australia-southeast1
         _client = genai.Client(
             vertexai=True,
-            project=project_id,
-            location=location_id
+            project='single-parents-adelaide',
+            location='global'
         )
-        print(f"✓ Client Initialized: Project={project_id} | Region={location_id} | Model=gemini-2.5-flash")
+        print("✓ Gemini client initialized with Vertex AI (global endpoint)")
     return _client
 
 
 def get_model_name():
-    """Get the model name - the only model that matters for 2026."""
+    """Get the model name - 2026 stable workhorse."""
     return "gemini-2.5-flash"
 
 
