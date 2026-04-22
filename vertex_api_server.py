@@ -22,18 +22,22 @@ def get_client():
     """Get or create the Gemini client."""
     global _client
     if _client is None:
+        # Confirming environment integrity
+        project_id = os.environ.get("GOOGLE_CLOUD_PROJECT", "single-parents-adelaide")
+        location_id = os.environ.get("GOOGLE_CLOUD_LOCATION", "australia-southeast1")
+
         _client = genai.Client(
             vertexai=True,
-            project=os.environ.get("GOOGLE_CLOUD_PROJECT", "single-parents-adelaide"),
-            location=os.environ.get("GOOGLE_CLOUD_LOCATION", "australia-southeast1")
+            project=project_id,
+            location=location_id
         )
-        print("✓ Gemini client initialized in Vertex AI mode (Sydney)")
+        print(f"✓ Client Initialized: Project={project_id} | Region={location_id} | Model=gemini-2.5-flash")
     return _client
 
 
 def get_model_name():
-    """Get the model name - Gemini 3 for 2026."""
-    return "gemini-3-flash-preview"
+    """Get the model name - the only model that matters for 2026."""
+    return "gemini-2.5-flash"
 
 
 # ─── Static file serving ──────────────────────────────────────────────────────
