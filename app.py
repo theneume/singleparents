@@ -22,22 +22,18 @@ def get_client():
     """Get or create the Gemini client."""
     global _client
     if _client is None:
-        # DO NOT use vertexai=True here; it will look for a Service Account file.
-        # Using http_options allows the API Key to authenticate with Vertex.
         _client = genai.Client(
-            api_key=os.environ.get("GOOGLE_API_KEY"),
-            http_options=types.HttpOptions(api_version="v1")
+            vertexai=True,
+            project=os.environ.get("GOOGLE_CLOUD_PROJECT", "single-parents-adelaide"),
+            location=os.environ.get("GOOGLE_CLOUD_LOCATION", "australia-southeast1")
         )
-        print("✓ Gemini client initialized with Cloud API Key + Vertex v1 API")
+        print("✓ Gemini client initialized in Vertex AI mode (Sydney)")
     return _client
 
 
 def get_model_name():
-    """Get the full Vertex resource path for the model."""
-    project = os.environ.get("GOOGLE_CLOUD_PROJECT")
-    location = os.environ.get("GOOGLE_CLOUD_LOCATION")
-    # The "latest" alias is required for region-specific stability
-    return f"projects/{project}/locations/{location}/publishers/google/models/gemini-1.5-flash-latest"
+    """Get the model name - Gemini 3 for 2026."""
+    return "gemini-3-flash-preview"
 
 
 # ─── Static file serving ──────────────────────────────────────────────────────
